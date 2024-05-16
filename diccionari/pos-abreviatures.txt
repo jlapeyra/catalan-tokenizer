@@ -1,0 +1,42 @@
+A - adjectiu
+C - conjunció
+D - determinant
+F - enumeració
+I - interjecció
+N - nom
+P - pronom
+R - adverbi
+S - preposició
+V - verb
+Y - abreviacio
+
+AO - adjectiu ordinal
+AQ - adjectiu qualificatiu
+CC - conjunció connectiva
+CS - conjunció subordinativa
+DA - determinant article
+DD - determinant demostratiu
+DE - determinant especificatiu
+DI - determinant intenstificatiu
+DN - determinant numeral
+DP - determinant possessiu
+DR - determinant relatiu
+DT - determinant quantitatiu
+Fs - etc
+I - interjecció
+NC - nom comu
+NP - nom propi
+P0 - pronom reflexiu
+PD - pronom demostratiu
+PI - pronom intenstificatiu
+PP - pronom personnal
+PR - pronom relatiu
+PT - pronom quantitatiu
+PX - pronom possessiu
+RG - adberbi general
+RN - adverbi de negació
+SP - preposició
+VA - verb auxiliar
+VM - verb general
+VS - verb ser
+Y - abreviacio
