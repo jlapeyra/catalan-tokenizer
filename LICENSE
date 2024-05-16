@@ -1,4 +1,10 @@
-                    GNU GENERAL PUBLIC LICENSE
+This project is under GNU GENERAL PUBLIC LICENSE.
+This project includes open-source data (related to the Catalan 
+dictionary) taken from https://github.com/Softcatala/catalan-dict-tools,
+which is under the GNU General Public License and the GNU Lesser General 
+Public License.
+
+                      GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
