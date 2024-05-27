@@ -1,4 +1,4 @@
-from diccionari import getDiccionari
+from diccionari import getDiccionari, Pos
 import utils
 import re
 
@@ -21,29 +21,6 @@ def splitContraccions(word:str):
     
     
 
-
-'''def splitContraccions(word:str):
-    if "'" not in word and "-" not in word:
-        return [paraula]
-    found = True
-    contraccions_fi = []
-    while found:
-        found = False
-        for contraccio in CONTRACCIONS_FINALS:
-            if word.endswith(contraccio):
-                word = word.removesuffix(contraccio)
-                contraccions_fi.append(word)
-    found = True
-    contraccions_ini = []
-    while found:
-        found = False
-        for contraccio in CONTRACCIONS_INICIALS:
-            if word.startswith(contraccio):
-                word = word.removeprefix(contraccio)
-                contraccions_ini.append(word)
-    return contraccions_ini + [paraula] + list(reversed(contraccions_fi))'''
-
-
 RE_WORD = r"[\w·\-']+"
 RE_PUNCTIATION = r'(?:[,;:.()?!"]|\.\.\.)'
 
@@ -63,24 +40,26 @@ def splitWords(string):
 DICCIONARI = utils.group(getDiccionari(), lambda info: info.word)
 
 
-
 def triaCategoria(opcions, categoria_posterior):
-    if categoria_posterior == 'N' or categoria_posterior == 'D':
-        if 'D' in opcions:
-            return 'D'
-        elif 'S' in opcions:
-            return 'S'
-    elif categoria_posterior == 'V':
-        if 'P' in opcions:
-            return 'P'
+    if categoria_posterior in (Pos.NOM, Pos.DETERMINANT):
+        if   Pos.DETERMINANT in opcions: 
+            return Pos.DETERMINANT
+        elif Pos.PREPOSICIO  in opcions: 
+            return Pos.PREPOSICIO
+    elif categoria_posterior == Pos.VERB:
+        if Pos.PRONOM in opcions: 
+            return Pos.PRONOM
     return '?'
 
 
 def assignarCategoria(string:str):
     assignacio = []
     for paraula in splitWords(string):
-        info_list = DICCIONARI[paraula] or DICCIONARI[paraula.lower()] or DICCIONARI[paraula.upper()] or DICCIONARI[paraula.capitalize()]
-        categories = sorted(utils.group(info_list, lambda info: info.pos[0]))
+        if re.match(RE_PUNCTIATION+'$', paraula):
+            categories = ['.']
+        else:
+            info_list = DICCIONARI[paraula] or DICCIONARI[paraula.lower()] or DICCIONARI[paraula.upper()] or DICCIONARI[paraula.capitalize()]
+            categories = sorted(utils.group(info_list, lambda info: info.pos[0]))
         if len(categories) == 1:
             categoria = categories[0]
         else:
@@ -89,14 +68,36 @@ def assignarCategoria(string:str):
 
     for i in reversed(range(len(assignacio))):
         paraula, categoria, categories = assignacio[i]
-        if categoria == '?' and i < len(assignacio[i]):
+        if categoria == '?' and i+1 < len(assignacio):
             assignacio[i][1] = triaCategoria(categories, assignacio[i+1][1])
     return assignacio
             
-string = "Jo la vaig veure un dia clar sota una llum que m'encegava i quan la vaig gosar mirar ella em tornava la mirada"
+string = "Jo la vaig veure un dia clar, sota una llum que m'encegava i quan la vaig gosar mirar ella em tornava la mirada"
 
-for w, _, _ in assignarCategoria(string):
-    print(w, end=' ')
-print()
-for w, c, _ in assignarCategoria(string):
-    print(c + ' '*(len(w)-1), end=' ')
+
+def assignPosAndPrint(string, file):
+    for w, _, _ in assignarCategoria(string):
+        print(w, end=' ', file=file)
+    print(file=file)
+    for w, c, _ in assignarCategoria(string):
+        print(c + ' '*(len(w)-1), end=' ', file=file)
+    print(file=file)
+    print(file=file)
+
+if __name__ == '__main__':
+    count = 0
+    with open('data/catalunya.wiki.pos.txt', 'w', encoding='utf-8') as out:
+        with open('data/catalunya.wiki.txt', 'r', encoding='utf-8') as f:
+            for paragraf in f:
+                count += 1
+                while paragraf:
+                    if len(paragraf) < 120:
+                        linia = paragraf
+                        paragraf = ''
+                    else:
+                        i = paragraf[:120].rfind(' ')
+                        linia = paragraf[:i]
+                        paragraf = paragraf[i:]
+                    assignPosAndPrint(linia, out)
+                if count >= 10:
+                    break
