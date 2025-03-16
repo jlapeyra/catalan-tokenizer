@@ -1,2 +1,7 @@
 **/tmp/
 __pycache__/
+corpus-tools/
+ancora/
+*.url
+*.tmp
+kk.*

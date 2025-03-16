@@ -1,0 +1,567 @@
+“ Quinze glaçons d' hidrogen , el pòdcast de llengua i tecnologia de Softcatalà , amb Aleix Vidal . 
+, D      N       S  N        , D  N       S  N       C N          S  N          , S   N     N     . 
+
+Us donem la benvinguda al primer pòdcast de Softcatalà . 
+P  V     D  N          S  A      N       S  N          . 
+
+Ja sigui des del mòbil , amb auriculars , al cotxe , des del portàtil , una tauleta , un televisor 
+C  V     S   S   N     , S   N          , S  N     , S   S   N        , D   N       , D  N         
+
+intel·ligent o ves a saber quin dispositiu , esteu escoltant la primera edició d' un pòdcast de llengua i 
+A            C V   S V     D    N          , V     V         D  A       N      S  D  N       S  N       C 
+
+tecnologia de la mà de la gent que hi ha darrere del Softcatalà . 
+N          S  D  N  S  D  N    P   P  V  S       S   N          . 
+
+Sí , el Softcatalà , aquell corrector ortogràfic i gramatical tan famós entre estudiants i 
+R  , D  N          , D      N         A          C A          R   N     S     N          C 
+
+treballadors . 
+N            . 
+
+O calla , calla . Potser hauria de dir : el Softcatalà , aquell traductor automàtic que ens salva a 
+C V     , V     . R      V      S  V   , D  N          , D      N         A         P   P   V     S 
+
+tots la vida quan hem de reescriure un text del català al castellà , o al revés ( o també en anglès , 
+P    D  N    C    V   S  V          D  N    S   N      S  N        , C S  N     , C R     S  N      , 
+
+francès , occità , aragonès , romanès o portuguès ) . 
+N       , N      , N        , N       C N         , . 
+
+Però espera , Softcatalà … ¿ no estarem parlant d' aquella bona gent que té un programet que et 
+C    V      , N          , , R  V       V       S  D       A    N    P   V  D  N         P   P  
+
+catalanitza automàticament un ordinador Windows o Mac ? 
+V           R              D  N         N       C N   , 
+
+Bufa ! No sé vosaltres , però jo ja m' he començat a perdre . I no us sembla que potser ens hauríem 
+I    , R  V  P         , C    P  R  P  V  V        S V      . C R  P  V      P   R      P   V       
+
+de començar a trobar ? 
+S  V        S V      , 
+
+Ens podem trobar aquí , en aquest espai , que podem aprofitar per aclarir coses sobre què és 
+P   V     V      R    , S  P      N     , P   V     V         S   V       N     S     P   V  
+
+Softcatalà , però també per descobrir -ne secrets , revelar -ne sorpreses i anunciar -ne novetats . 
+N          , C    R     S   V         P   N       , V       P   N         C V        P   N        . 
+
+Tot això ho intentarem fer en aquesta mena de taverna que hem inaugurat aquest setembre de 2020 per 
+R   P    P  V          V   S  D       N    S  N       P   V   V         D      N        S  N    S   
+
+tots vosaltres . 
+P    P         . 
+
+Joan , vols dir que hem triat gaire bon any ? 
+N    , V    V   C   V   V     R     A   N   , 
+
+L' hem anomenada “ Quinze glaçons d' hidrogen . 
+D  V   V         , D      N       S  N        . 
+
+Els més avesats al món digital en català potser ja saben per què , però si aneu més perduts que un 
+D   R   V       S  N   A       S  N      R      R  V     S   P   , C    C  V    R   N       C   D  
+
+punt aterrat entre dues eles , no us preocupeu que ja ho explicarem . 
+N    V       S     D    N    , R  P  V         C   R  P  V          . 
+
+En aquesta barra de bar plena de gelades copes amb nobles glaçons , tindrem ocasió de conversar amb 
+S  D       N     S  N   A     S  N       N     S   A      N       , V       N      S  V         S   
+
+membres de Softcatalà sobre tota mena de projectes que tenim entre mans 
+N       S  N          S     D    N    S  N         P   V     S     N    
+
+però també amb molts altres col·laboradors que duen a terme una feina brutal pel català a la 
+C    R     S   D     D      N              P   V    S N     D   N     A      S   N      S D  
+
+tecnologia i a les xarxes . 
+N          C S D   N      . 
+
+I si la llengua us agrada tant com a nosaltres pareu l' orella perquè compartirem petits moments de 
+C C  D  N       P  V      R    R   S P         V     D  N      C      V           A      N       S  
+
+divertiments lingüístics amb frases fetes oblidades , talls de veu curiosos o correccions habituals ( tot i que 
+N            A           S   N      V     V         , N     S  N   A        C N           A         , R   C C   
+
+això de les correccions no està gaire ben vist a Twitter últimament ) . 
+P    S  D   N           R  V    R     R   V    S N       R          , . 
+
+Bé , com veieu se 'ns gira molta feina , així que anem al gra i benvinguts a la taverna dels : “ 
+I  , R   V     P  P   V    D     N     , R    P   V    S  N   C A          S D  N       S    , , 
+
+Quinze glaçons d' hidrogen ” 
+D      N       S  N        , 
+
+Començarem amb un petit cop d' ull a les notícies en una mena de pica-pica tecnològic . L' hem 
+V          S   D  A     N   S  N   S D   N        S  D   N    S  N         A          . P  V   
+
+anomenat ... 
+V        ,   
+
+“ L' aperitiu d' actualitat ” 
+, D  N        S  N          , 
+
+No sempre tindrem gaires novetats , a Softcatalà sovint es fa feina de formigueta i les notícies 
+R  R      V       D      N        , S N          R      P  V  N     S  N          C D   N        
+
+tarden a sortir a la llum . 
+V      S V      S D  N    . 
+
+Però aquesta vegada sí que en tenim una de grossa , segur que ja n' heu sentit a parlar . 
+C    D       N      R  C   P  V     D   S  N      , A     C   R  P  V   V      S V      . 
+
+Es tracta del traductor neuronal anglès - català , un nou servei que oferim en obert i lliure a 
+P  V      S   N         A        N      , N      , D  D   N      P   V      S  V     C A      S 
+
+través del nostre web . 
+N      S   D      N   . 
+
+Ens en parla el coordinador del projecte . 
+P   P  N     D  N           S   N        . 
+
+Hola , el meu nom és Jordi Mas i us volia explicar un projecte que hem publicat fa pocs dies 
+I    , D  D   N   V  N     N   C P  V     V        D  N        P   V   V        V  D    N    
+
+Es tracta d' un nou traductor anglès - català . I dic nou traductor anglès - català perquè Softcatalà 
+P  V      S  D  A   N         N      , N      . C V   A   N         N      , N      C      N          
+
+durant molt de temps ha tingut , i encara té , un traductor anglès - català basat en tecnologia d' Apertium , 
+S      D    S  N     V  V      , C R      V  , D  N         N      , N      V     D  N          S  N        , 
+
+i ara el que anunciem és un nou traductor desenvolupat en una tecnologia totalment diferent , que s' 
+C R   D  P   V        V  D  A   N         A            S  D   N          R         A        , P   P  
+
+anomena tecnologia neuronal , que en principi té un rendiment que és superior , que a part us permet 
+V       N          A        , P   D  N        V  D  N         P   V  A        , P   S N    P  V      
+
+traduir fitxers . 
+V       N       . 
+
+A aquest nou traductor podeu accedir -hi des de la pàgina normal del traductor a Softcatalà 
+S D      A   N         V     V       P   S   S  D  N      A      S   N         S N          
+
+i quan escolliu la traducció català - anglès o anglès - català us apareixerà un petit missatge a dalt 
+C P    V        D  N         N      , N      C N      , N      P  V          D  A     N        S S    
+
+de tot on se us convidarà a provar el nou traductor . 
+S  P   R  P  P  V         S V      D  A   N         . 
+
+Llavors aquest traductor el tindrem en proves simultàniament al traductor clàssic que hem tingut i 
+R       D      N         P  V       S  N      R              S  N         A       P   V   V      C 
+
+dintre d' uns mesos decidirem , basant -nos en una avaluació pròpia i els comentaris , dels usuaris quin 
+S      S  D   N     V         , V      P    S  D   N         A      C D   N          , S    N       P    
+
+és el que deixem per defecte . 
+V  D  P   V      S   N       . 
+
+En qualsevol cas us convidem a provar -ho i a donar -vos la nostra opinió i … moltes gràcies per tot 
+S  D         N   P  V        S V      P   C S V     P    D  D      N      C , D      N       S   P   
+
+. 
+. 
+
+Si sou usuaris avançats us convidem a consultar al nostre perfil de GitHub la tecnologia que 
+C  V   N       V        P  V        S V         S  D      N      S  N      D  N          P   
+
+utilitzem en aquest traductor . Està publicada de manera lliure i oberta perquè pugueu instal·lar -vos -la , 
+V         S  D      N         . V    V         S  N      A      C V      C      V      V          P    P   , 
+
+estudiar -la o millorar -la . 
+V        P   C V        P   . 
+
+“ Quinze glaçons d' hidrogen ” 
+, D      N       S  N        , 
+
+I com tota taverna al “ Quinze glaçons d' hidrogen ” també hi tenim un rebost . De fet té molts 
+C R   D    N       S  , D      N       S  N        , R     P  V     D  N      . S  N   V  D     
+
+anys i hi podem trobar grans reserves , passeu , passeu ! 
+N    C P  V     V      A     N        , V      , V      , 
+
+“ El rebost digital ” 
+, D  N      A       , 
+
+En aquest espai anirem destacant -vos aplicacions o programes que recollim al nostre web que estan 
+S  D      N     V      V         P    N           C N         P   V        S  D      N   P   V     
+
+disponibles en llengua catalana . 
+A           D  N       A        . 
+
+Solem donar prioritat al programari lliure i el rebost no serà una excepció , però estem oberts a 
+V     V     N         S  N          A      C D  N      R  V    D   N        , C    V     V      S 
+
+tot . 
+P   . 
+
+Resulta que un servidor és mestre , de petits , de primària i el setembre és el mes d' arrencada , 
+V       C   D  N        V  N      , S  N      , S  N        C D  N        V  D  N   S  N         , 
+
+així que comencem recomanant -vos un dels grans del programari educatiu en català . Un projecte de 
+R    P   V        V          P    D  S    A     S   N          A        S  N      . D  N        S  
+
+traducció clau que no sorgeix de Softcatalà i que ja té història . 
+N         A    P   R  V       S  N          C P   R  V  N        . 
+
+Parlem de l' Scratch , un entorn de programació per blocs que ha esdevingut un estàndard en la 
+V      S  D  N       , D  N      S  N           S   N     P   V  V          D  N         S  D  
+
+introducció dels nens i nenes en la programació i la robòtica . 
+N           S    N    C N     S  D  N           C D  N        . 
+
+Desenvolupat pel Massachusetts Institute of Technology sota una llicència lliure i d' ús gratuït , 
+V            S   N             N         S  N          S    D   N         A      C S  N  A       , 
+
+la seva versió en català és possible gràcies a la incansable feina d' Eugeni Catalán , Jaume Ramos , 
+D  D    N      S  N      V  A        N       S D  A          N     S  N      N       , N     N     , 
+
+Frank Sabater , Pau Córdoba , Toni Codina i Pau Nin , que des del 2007 mantenen actualitzada la traducció 
+N     N       , N   N       , N    N      C N   N   , P   S   S   N    V        V            D  N         
+
+per cadascuna de les versions d' Scratch que han anat apareixent . Una veritable feinada , us ho puc 
+S   P         S  D   N        S  N       P   V   V    V          . D   A         N       , P  P  V   
+
+assegurar . 
+V         . 
+
+Al web de Softcatalà podeu trobar més informació i baixar -vos o utilitzar en línia l' Scratch . 
+S  N   S  N          V     V      D   N          C V      P    C V         D  N     D  N       . 
+
+També trobareu informació actualitzada i molts recursos al web scratchcatala.com 
+R     V        N          V            C D     N        S  N   N                 
+
+I arriba el moment de conèixer algun dels pencaires que hi ha darrere de Softcatalà . Ho farem “ a 
+C V      D  N      S  V        P     S    A         P   P  V  S       S  N          . P  V     , S 
+
+taula ” . 
+N     , . 
+
+“ Parem taula ” 
+, V     N     , 
+
+Vinga , doncs , anirem parant taula per fer el primer arròs . Un arròs , sí ! Bé , potser serà una 
+V     , C     , V      V      N     S   V   D  A      N     . D  N     , R  , I  , R      V    D   
+
+bona paella valenciana . 
+A    N      A          . 
+
+Resulta que a Softcatalà som una mica obsessius amb el tema de l' arròs i les seves variants 
+V       C   S N          V   D   N    A         S   D  N    S  D  N     C D   D     N        
+
+culinàries de tot el territori . En aquesta secció algun dels membres o col·laboradors de Softcatalà ens 
+A          S  D   D  N         . S  D       N      P     S    N       C N              S  N          P   
+
+donarà un cop de mà a parar taula mentre ens explica quina és la seva tasca o quines coses té entre mans . 
+V      D  N   S  N  S V     N     C      P   V       P     V  D  D    N     C D      N     V  S     N    . 
+
+I no marxarà sense dir -nos com li agrada menjar -se l' arròs ! 
+C R  V       S     V   P    R   P  V      V      P   D  N     , 
+
+Avui és el torn de l' Artur Vicedo . 
+R    V  D  N    S  D  N     N      . 
+
+Hola , què tal ? Em diuen Artur i soc membre de Softcatalà des de 2015 . No soc informàtic , ni 
+I    , P   P   , P  V     N     C V   N      S  N          S   S  N    . R  V   N          , C  
+
+lingüista , ni res . Soc un enginyer civil que col·labora amb l' associació traduint programes de l' anglès 
+N         , C  P   . V   D  N        A     P   V          S   D  N          V        N         S  D  N      
+
+al català . 
+S  N      . 
+
+Vaig entrar a l' associació a través de la traducció del Telegram , on era un col·laborador prou 
+V    V      S D  N          S N      S  D  N         S   N        , R  V   D  N             R    
+
+habitual i prou insistent . I bueno , sembla que els va agradar el que vaig fer perquè em van convidar a ser 
+A        C R    A         . C I     , V      C   P   V  V       P  P   V    V   C      P  V   V        S V   
+
+membre de Softcatalà . 
+N      S  N          . 
+
+També participe en altres projectes de traducció com el Signal , el LibreOffice , el projecte Tor 
+R     V         S  D      N         S  N         R   D  N      , D  N           , D  N        N   
+
+també he traduït algunes coses . 
+R     V  V       D       N     . 
+
+Un grapat de projectes en els que intente tirar una maneta quan tinc temps lliure . 
+D  N      S  N         S  P   P   V       V     D   N      P    V    N     A      . 
+
+Internament , també faig altres tasques dins de l' associació . Per exemple , amb altres membres de 
+R           , R     V    D      N       S    S  D  N          . S   N       , S   D      N       S  
+
+Softcatalà intente tirar endavant un grup de disseny gràfic que tenim , 
+N          V       V     R        D  N    S  N       A      P   V     , 
+
+de col·laboradors que es dediquen al disseny gràfic i ens ajuden de manera altruista a generar o 
+S  N              P   P  V        S  N       A      C P   V      S  N      A         S V       C 
+
+crear contingut visual per a les nostres xarxes socials , o per a les notícies que publiquem , per al 
+V     N         A      S   S D   D       N      A       , C S   S D   N        P   V         , S   S  
+
+nostre web , etc . 
+D      N   , F   . 
+
+I a mi l' arròs m' agrada , com no podia ser d' altra manera , al forn . 
+C S P  D  N     P  V      , R   R  V     V   S  D     N      , S  N    . 
+
+I si pot ser amb costra millor . Au , que vaja bé , adéu ! 
+C C  V   V   S   N      R      . I  , C   V    R  , I    , 
+
+Ja tenim la taula parada i això es comença a omplir de gent . Potser que anem demanant que encara 
+R  V     D  N     V      C P    P  V       S V      S  N    . R      P   V    V        C   R      
+
+ens quedarem amb gana . 
+P   V        S   N    . 
+
+Abans de l' arròs al forn , us recomano alguna tapa . Per exemple ... 
+R     S  D  N     S  N    , P  V        D      N    . S   N       ,   
+
+“ Una tapa de refranys ” 
+, D   N    S  N        , 
+
+En aquesta petita secció , en Josep ens convidarà a conèixer una de les dites o refranys que es 
+S  D       A      N      , D  N     P   V         S V        D   S  D   N     C N        P   P  
+
+recullen a la Paremiologia Catalana Comparada Digital , un projecte de Víctor Pàmies , amb la col·laboració 
+V        S D  N            A        V         A       , D  N        S  N      N      , S   D  N             
+
+de Softcatalà . 
+S  N          . 
+
+“ Una tapa de refranys ” , amb Josep Closa 
+, D   N    S  N        , , S   N     N     
+
+Doncs … comencem amb ganes , tu . Qui vulgui peix , que es mulli el cul . 
+C     , V        S   N     , P  . P   V      N    , C   P  V     D  N   . 
+
+Aquesta parèmia fa referència a l' esforç que s' ha de destinar a aconseguir qualque cosa . 
+D       N       V  N          S D  N      P   P  V  S  V        S V          D       N    . 
+
+Se 'n recullen diferents versions , la més antiga del 1831 . 
+P   P V        D         N        , P  R   A      S   N    . 
+
+Qui vol menjar peix s' ha de mullar lo cul . 
+P   V   V      N    P  V  S  V      D  N   . 
+
+Però també , qui vol menjar peix que es banyi es cul , a Menorca . 
+C    R     , P   V   V      N    C   P  V     D  N   , S N       . 
+
+Cap al País Valencià posen més èmfasi en la roba : 
+S   S  N    A        V     D   N      S  D  N    , 
+
+El que peix vullga menjar les bragues s' ha de banyar , a la Marina Alta . 
+P  P   N    V      V      D   N       P  V  S  V      , S D  N      A    . 
+
+Mentre que al Pirineu sembla que l' important és el tipus de peix : 
+C      C   S  N       V      C   P  A         V  D  N     S  N    , 
+
+Qui truites vol agafar , el cul s' ha de mullar . 
+P   N       V   V      , D  N   P  V  S  V      . 
+
+Al Matarranya ho fan més petitet : 
+S  N          P  V   R   A       , 
+
+Qui vulgue peixet , que s' arremulli el culet . 
+P   V      N      , C   P  V         D  N     . 
+
+Com veieu , el refranyer català és molt ric i divers . 
+P   V     , D  N         A      V  R    A   C A      . 
+
+En teniu més informació al web pccd.dites.cat 
+P  V     D   N          S  N   N  
+
+Quinze glaçons d' hidrogen 
+D      N       S  N        
+
+Arriba l' hora del cafè . Un moment que algú encara aprofitaria per trobar errades als cartells de 
+V      D  N    S   N    . D  N      P   P    R      V           S   V      N       S   N        S  
+
+la taverna , a la carta , al diari . Reduïm -ne les possibilitats amb el nostre corrector . 
+D  N       , S D  N     , S  N     . V      P   D   N             S   D  D      N         . 
+
+En Jaume ens en parla . 
+D  N     P   P  V     . 
+
+“ Un cafè molt descafeïnat . O un cafè mòlt descafeïnat ? , amb Jaume Ortolà 
+, D  N    P    V           . C D  N    V    V           , , S   N     N      
+
+Obrim aquesta secció dedicada a explicar anècdotes i curiositats del corrector gramatical de 
+V     D       N      V        S V        N         C N           S   N         A          S  
+
+Softcatalà . 
+N          . 
+
+Avui parlarem dels errors més freqüents que troba el corrector . 
+R    V        S    N      R   A         P   V     D  N         . 
+
+L' error més comú de tots és el simple error ortogràfic . Això passa quan escrivim una paraula que 
+D  N     R   A    S  P    V  D  A      N     A          . P    V     P    V        D   N       P   
+
+el corrector no té en el seu diccionari . Llavors , el corrector intenta suggerir paraules semblants a 
+D  N         R  V  S  D  D   N          . R       , D  N         V       V        N        A         S 
+
+la que hem escrit , però sí que té en el diccionari . 
+P  P   V   V      , C    R  P   V  S  D  N          . 
+
+També pot passar que escrivim una paraula que podria ser acceptable , però que el corrector no té 
+R     V   V      P   V        D   N       P   V      V   A          , C    P   D  N         R  V  
+
+en el diccionari : noms propis , noms derivats , composts ... 
+S  D  N          , N    A      , N    V        , V        ,   
+
+És un inconvenient una mica inevitable , perquè és impossible tenir un diccionari amb totes les 
+V  D  N            D   N    A          , C      V  A          V     D  N          S   D     D   
+
+paraules que existeixen i les que es creen dia rere dia en una llengua viva . 
+N        P   V          C P   P   P  V     N   R    N   S  D   N       A    . 
+
+Podeu ajudar -nos a mantenir actualitzat el diccionari enviant -nos propostes de paraules noves . 
+V     V      P    S V        V           D  N          V       P    N         S  N        A     . 
+
+Aquesta funció de trobar errors ortogràfics és molt important , però no és especialment interessant 
+D       N      S  V      N      A           V  R    A         , C    R  V  R            A           
+
+perquè això ja ho feien els correctors ortogràfics de fa molts anys . 
+C      P    R  P  V     D   N          A           S  V  D     N    . 
+
+El que aporta el corrector gramatical de Softcatalà és que també detecta molts altres errors . 
+P  P   V      D  N         A          S  N          V  C   R     V       D     D      N      . 
+
+I quin és l' error més detectat pel corrector , després dels simples errors ortogràfics ? 
+C P    V  D  N     R   V        S   N         , R       S    A       N      A           , 
+
+Doncs és l' accent diacrític que diferencia “ és ” del verb ser ( “ Lo riu és vida ” , que duu accent ) 
+C     V  D  N      A         P   V          , V  , S   N    V   , , D  N   V  N    , , P   V   N      , 
+
+del pronom “ es ” ( aquí es viu molt bé , que no en duu ) . I per què passa això tan sovint ? 
+S   N      , P  , , R    P  V   R    R  , P   R  P  V   , . C S   P   V     P    R   R      , 
+
+Doncs perquè és una paraula molt freqüent i en qualsevol moment ens podem descuidar l' accent . 
+C     C      V  D   N       R    A        C S  D         N      P   V     V         D  N      . 
+
+El corrector amb aquest accent la sol encertar gairebé sempre . Però hi ha algun cas dubtós , 
+D  N         S   D      N      D  N   V        R       R      . C    P  V  D     N   A      , 
+
+ambigu , en què no és capaç de llegir , de saber , quina és la intenció de l' usuari . 
+A      , S  P   R  V  A     S  V      , S  V     , P     V  D  N        S  D  N      . 
+
+Voleu un repte ? Trobeu algun exemple en què el corrector no encerti si cal o no posar l' accent en 
+V     D  N     , V      D     N       S  P   D  N         R  V       C  V   C R  V     D  N      S  
+
+" és " . 
+, V  , . 
+
+Doncs ja ho heu sentit : si accepteu jugar amb en Jaume , envieu -nos les vostres respostes 
+C     R  P  V   V      , C  V        V     S   D  N     , V      P    D   D       N         
+
+a través de les xarxes socials o al formulari de contacte del nostre web . 
+S N      S  D   N      A       C S  N         S  N        S   D      N   . 
+
+“ A la barra ” 
+, S D  N     , 
+
+Anem acabant per avui i ho farem apropant -nos a la barra , on s' acostumen a descobrir tota mena 
+V    V       S   R    C P  V     V        P    S D  N     , R  P  V         S V         D    N    
+
+de secrets i curiositats . 
+S  N       C N           . 
+
+En aquesta ocasió hi trobem un històric de Softcatalà . 
+S  D       N      P  V      D  A        S  N          . 
+
+Sabíeu que el nostre primer projecte fou la traducció del navegador Netscape ? Va ser cap a l any 
+V      C   D  D      A      N        V   D  N         S   N         N        , V  V   S   S D N   
+
+1997 quan Softcatalà tot just començava a fer les seves primeres passes . 
+N    R    N          R   R    V         S V   D   D     A        N      . 
+
+La versió en català del Netscape Navigator es va anomenar , en un primer moment , “ Almogàver 
+D  N      S  N      S   N        N         P  V  V        , S  D  A      N      , , N         
+
+Communicator " . 
+N            , . 
+
+Però en poc temps , i després d' un acord amb el grup Enciclopèdia Catalana , va passar a ser “ El 
+C    S  D   N     , C R       S  D  N     S   D  N    N            A        , V  V      S V   , D  
+
+Navegador " . 
+N         , . 
+
+Ens en fa cinc cèntims Miquel Piulats , membre fundador de Softcatalà . 
+P   P  V  D    N       N      N       , N      A        S  N          . 
+
+Quan Netscape ens va autoritzar a fer la traducció , ho vàrem celebrar i ens vam posar en marxa tot 
+R    N        P   V  V          S V   D  N         , P  V     V        C P   V   V     S  N     R   
+
+d' una , repartint -nos la feina entre els pocs que érem en aquell moment . 
+S  P   , V         P    D  N     S     D   P    P   V    S  D      N      . 
+
+Per qüestions legals no podíem fer servir el mateix nom ni les marques de Netscape , i per això el 
+S   N         A      R  V      V   V      D  A      N   C  D   N       S  N        , C S   P    D  
+
+producte va sortir amb un nom alternatiu . 
+N        V  V      S   D  N   A          . 
+
+També vàrem posar en funcionament el domini de softcatala.org , que era on pensàvem publicar la 
+R     V     V     D  N            D  N      S  N              , P   V   P  V        V        D  
+
+primera versió del programa . El nom ens va sonar molt bé des d' un principi , 
+A       N      S   N        . D  N   P   V  V     R    R  S   S  D  N        , 
+
+i d' alguna manera ja evocava que el navegador no seria l' únic projecte que posaríem en 
+C S  D      N      R  V       C   D  N         R  V     D  A    N        P   V        D  
+
+funcionament . 
+N            . 
+
+Quan encara no teníem web , alguns mitjans ja s' havien fet ressò de que estàvem treballant en la 
+R    R      R  V      N   , D      N       R  P  V      V   N     S  P   V       V          S  D  
+
+versió del Netscape en català , i la web ja registrava moltes visites . 
+N      S   N        S  N      , C D  N   R  V          D      N       . 
+
+Vàrem trigar un any , o prop d' un any , a fer la localització de producte . No teníem ni tanta 
+V     V      D  N   , C R    S  D  N   , S V   D  N            S  N        . R  V      C  D     
+
+experiència ni les eines com les que tenim ara . I a la fi , el 2 d' octubre de 1998 , vàrem publicar la 
+N           C  D   N     R   P   P   V     R   . C S D  N  , D  N S  N       S  N    , V     V        D  
+
+primera versió en una web que ens va ajudar a dissenyar en Ricard Vaqué , 
+A       N      S  D   N   P   P   V  V      S V         D  N      N     , 
+
+que també va col·laborar en el disseny de la imatge de “ El Navegador " . 
+P   R     V  V           S  D  N       S  D  N      S  , D  N         , . 
+
+Quan la vàrem publicar , vàrem col·lapsar l' amplada de banda del proveïdor que ens oferia el 
+R    P  V     V        , V     V          D  N       S  N     S   N         P   P   V      D  
+
+servei d' allotjament en aquell moment , i ens va obligar a cercar ajuda amb altres organitzacions per a 
+N      S  N           S  D      N      , C P   V  V       S V      N     S   D      N              S   S 
+
+poder oferir llocs de descàrrega alternatius . 
+V     V      N     S  N          A           . 
+
+Va ser en aquell moment quan Softcatalà va néixer a la xarxa . 
+V  V   S  D      N      R    N          V  V      S D  N     . 
+
+I amb aquest viatge als inicis de Softcatalà acabem aquest primer episodi del nostre pòdcast . 
+C S   D      N      S   N      S  N          V      D      A      N       S   D      N       . 
+
+Aviat farem un quart de segle i tot just ara comencem a fer un pòdcast ? 
+R     V     D  N     S  N     C R   R    R   V        S V   D  N       , 
+
+I per què un pòdcast i no un canal de YouTube ? O un perfil a TikTok ? 
+C S   P   D  N       C R  D  N     S  N       , C D  N      S N      , 
+
+Doncs perquè som així . Tenim el nostre ritme i ens agrada . 
+C     C      V   R    . V     D  D      N     C P   V      . 
+
+Us esperem al proper programa amb més llengua i més tecnologia . 
+P  V       S  A      N        S   D   N       C D   N          . 
+
+Mentrestant … “ Jove xef ! Porti whisky amb quinze glaçons d' hidrogen , coi ! ” 
+R           , , A    N   , V     N      S   D      N       S  N        , I   , , 
+
+“ Quinze glaçons d' hidrogen , el pòdcast de llengua i tecnologia de Softcatalà . 
+, D      N       S  N        , D  N       S  N       C N          S  N          . 
+
