@@ -16,21 +16,25 @@ class TextHTMLParser(HTMLParser):
         self.__count_keys = {
             'include 1' : 0,
             'include 2' : 0,
-            'exclude' : 0
+            'exclude' : 0,
+            'caps': 0
         }
         super().__init__()
 
     def handle_starttag(self, tag, attrs):
-        classes = dict(attrs).get('class', '').split()
+        attrs = dict(attrs)
+        classes = attrs.get('class', '').split()
         keys = []
         if 'mw-parser-output' in classes: 
             keys.append('include 1')
-        if tag == 'p':
+        if tag in ('p', 'li', 'h1', 'h2', 'h3'): #'figcaption', 
             keys.append('include 2')
-        elif (tag in ('sup', 'script', 'style', 'table', 'math') or
+        if (tag in ('sup', 'script', 'style', 'math') or
             overlap(set(classes), ('mw-editsection', 'reflist', 'citation', 'interProject'))
         ):
             keys.append('exclude')
+        if 'font-variant:small-caps' in attrs.get('style', ''):
+            keys.append('caps')
         for key in keys:
             self.__count_keys[key] += 1
         self.__stack.append((tag, keys))
@@ -42,12 +46,17 @@ class TextHTMLParser(HTMLParser):
             stack_tag, keys = self.__stack.pop()
             for key in keys:
                 self.__count_keys[key] -= 1
+                if key == 'include 2':
+                    if self.text[-1:] != '\n':
+                        self.text += '\n'
     
     def handle_data(self, data):
         if (self.__count_keys['include 1'] and
             self.__count_keys['include 2'] and 
             not self.__count_keys['exclude']
         ):
+            if self.__count_keys['caps']:
+                data = data.upper()
             self.text += data
             #print(self.__count_keys)
 
@@ -79,11 +88,12 @@ def downloadHTML(url):
     return response.content.decode(response.encoding)
 
 if __name__ == '__main__':
-    html = downloadHTML('https://ca.wikipedia.org/wiki/Catalunya')
+    #html = downloadHTML('https://ca.wikipedia.org/wiki/Intel%C2%B7lig%C3%A8ncia_artificial')
+    html = downloadHTML('https://ca.wikipedia.org/wiki/Espanya')
     text = getPlainText(html)
-    links = getLinks(html)
-    with open('data/catalunya.wiki.links', 'w', encoding='utf-8') as f:
-        for l in set(links):
-            print(l, file=f)
-    with open('data/catalunya.wiki.txt', 'w', encoding='utf-8') as f:
+    # links = getLinks(html)
+    # with open('corpus/ia.wiki.links', 'w', encoding='utf-8') as f:
+    #     for l in set(links):
+    #         print(l, file=f)
+    with open('corpus/espanya.wiki.txt', 'w', encoding='utf-8') as f:
         f.write(text) 
