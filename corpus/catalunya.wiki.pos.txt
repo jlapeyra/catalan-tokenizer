@@ -14,13 +14,13 @@ Principat de Catalunya i és un dels territoris pertanyents a l' àmbit lingüí
 N         S  N         C V  D  S    N          A           S D  N     A          S    N      A        . D  
 
 novembre de 2023 tenia una població estimada de 8.005.784 habitants ( segons l' IDESCAT ) . El territori que 
-N        S  N    V     D   N        A        S  D         N         , S      D  N       , . D  N         P   
+N        S  Z    V     D   N        A        S  Z         N         , S      D  N       , . D  N         P   
 
 actualment es coneix com a Catalunya va ser una possessió de l' Imperi Romà que va passar a mans dels gots i 
 R          P  V      R   S N         V  V   D   N         S  D  N      N    P   V  V      S N    S    N    C 
 
 dels alans en el segle V . Els musulmans la van conquerir l' any 712 , però en van ser expulsats de la 
-S    N     D  D  N     A . D   N         P  V   V         D  N   N   , C    P  V   V   V         S  D  
+S    N     D  D  N     A . D   N         P  V   V         D  N   Z   , C    P  V   V   V         S  D  
 
 riba nord del Llobregat a les darreries del mateix segle I el començament del següent amb el suport de 
 N    A    S   N         S D   N         S   A      N     A D  N           S   A       S   D  N      S  
@@ -32,31 +32,31 @@ el temps , els comtes francs van convertir Catalunya en un territori independent
 D  N     , D   N      A      V   V         N         D  D  N         A           P   P  V  V          
 
 el 1137 amb la Corona d' Aragó , com que era una unió dinàstica cada país va conservar el seu poder 
-D  N    S   D  N      S  N     , C   C   V   D   N    A         D    N    V  V         D  D   N     
+D  Z    S   D  N      S  N     , C   C   V   D   N    A         D    N    V  V         D  D   N     
 
 polític i adminidtratiu . La corona d' Aragó va acabar la conquesta dels territoris musulmans de Catalunya 
 A       C A             . D  N      S  N     V  V      D  N         S    N          A         S  N         
 
 el 1154 . La Corona d' Aragó , posteriorment es va unir a la Corona de Castella el 1476 , com a 
-D  N    . D  N      S  N     , R             P  V  V    S D  N      S  N        D  N    , R   S 
+D  Z    . D  N      S  N     , R             P  V  V    S D  N      S  N        D  Z    , R   S 
 
 conseqüència del casament d' Isabel i Ferran , els reis catòlics . Va conservar les seves institucions autònomes 
 N            S   N        S  N      C N      , D   N    A        . V  V         D   P     N            A         
 
 de govern fins a l' acabament de la Guerra de Successió Espanyola el 1714 . Uns anys després del seu 
-S  N      A    S D  N         S  D  N      S  N         A         D  N    . D   N    R       S   D   
+S  N      A    S D  N         S  D  N      S  N         A         D  Z    . D   N    R       S   D   
 
 desmembrament per la cessió al Regne de França del comtat del Rosselló i part del de la Cerdanya . El 1978 , va 
-N             S   D  N      S  N     S  N      S   N      S   N        C N    S   S  D  N        . D  N    , V  
+N             S   D  N      S  N     S  N      S   N      S   N        C N    S   S  D  N        . D  Z    , V  
 
 recuperar autonomia i es va constituir com a comunitat autònoma del Regne d' Espanya . El 27 d' octubre de 
-V         N         C P  V  V          R   S N         A        S   N     S  N       . D  N  S  N       S  
+V         N         C P  V  V          R   S N         A        S   N     S  N       . D  Z  S  N       S  
 
 2017 el Parlament de Catalunya va proclamar la República Catalana , que no es va fer efectiva ni va 
-N    D  N         S  N         V  V         D  N         A        , P   R  P  V  V   A        C  V  
+Z    D  N         S  N         V  V         D  N         A        , P   R  P  V  V   A        C  V  
 
 aparèixer al DOGC , però va comportar l' aplicació de l' article 155 pel govern espanyol durant 218 dies . El 
-V         S  N    , C    V  V         D  N         S  D  N       N   S   N      A        S      D   N    . D  
+V         S  N    , C    V  V         D  N         S  D  N       Z   S   N      A        S      Z   N    . D  
 
 Parlament de Catalunya , recollint el sentiment i la voluntat de la ciutadania de Catalunya , ha definit 
 N         S  N         , V         D  N         C D  N        S  D  N          S  N         , V  V       
@@ -68,7 +68,7 @@ Tanmateix , la Constitució espanyola , en l' article segon , reconeix la realit
 R         , D  N           A         , D  D  N       A     , V        D  N        A        S  N         R   S 
 
 nacionalitat . La capital n' és Barcelona i té un total de 947 municipis . Dos terços de la població viuen a la 
-N            . D  N       P  V  N         C V  D  N     S  D   N         . D   N      S  D  N        V     S D  
+N            . D  N       P  V  N         C V  D  N     S  Z   N         . D   N      S  D  N        V     S D  
 
 regió metropolitana de Barcelona . La llengua pròpia de Catalunya és el català , excepte a la Vall d' 
 N     A             S  N         . D  N       A      S  N         V  D  N      , S       S D  N    S  
@@ -83,19 +83,19 @@ A        D  D   D  N         . D  N      , V         N      S D  N    S  N    , 
 . R           D   N        V   A         C V      D   D    N        A          R      P   V          
 
 respecte a l' idioma que tenen per llengua materna . Segons les dades de 2013 , el 99,7 % dels catalans sap 
-S        S D  N      P   V     S   N       A       . N      D   N     S  N    , D  N    , S    N        V   
+S        S D  N      P   V     S   N       A       . N      D   N     S  Z    , D  Z    , S    N        V   
 
 parlar castellà mentre que el 80,4 % sap parlar català . A més , l' ús per cada parlant d' un o un altre 
-V      N        C      C   D  N    , V   V      N      . S R   , D  N  S   D    N       S  D  C D  D     
+V      N        C      C   D  Z    , V   V      N      . S R   , D  N  S   D    N       S  D  C D  D     
 
 idioma depèn amb freqüència de l' àmbit social en el qual s' expressi . Segons les dades de l' Institut d' 
 N      V     S   N          S  D  N     A      S  D  P    P  V        . N      D   N     S  D  N        S  
 
 Estadística de Catalunya , el 36 % dels catalans utilitza el català com a llengua habitual , el 46 % el castellà , 
-N           S  N         , D  N  , S    N        V        D  N      R   S N       A        , D  N  , D  N        , 
+N           S  N         , D  Z  , S    N        V        D  N      R   S N       A        , D  Z  , D  N        , 
 
 el 12 % ambdues i el 0,03 % l' aranès . El 6 % de la població resident de Catalunya utilitza habitualment 
-D  N  , P       C D  N    , D  N      . D  N , S  D  N        A        S  N         V        R            
+D  Z  , P       C D  Z    , D  N      . D  Z , S  D  N        A        S  N         V        R            
 
 altres llengües . El nom de Catalunya , com a tal , es va començar a utilitzar a mitjan segle XII per 
 D      N        . D  N   S  N         , R   S P   , P  V  V        S V         S A      N     A   S   
@@ -125,7 +125,7 @@ una localitat musulmana a la regió d' Ath-Thaghr al-Alà pròxima a Lleida . É
 D   N         A         S D  N     S  N          N      A       S N      . V  V         S   D  
 
 historiador i geògraf musulmà Al-Udhrí ( 1002 ca. 1085 ) en la seva obra Tarsi al-akhbār . Segons aquest , 
-N           C N       A       N        , N    Y   N    , S  D  P    N    N     N         . N      P      , 
+N           C N       A       N        , Z    Y   Z    , S  D  P    N    N     N         . N      P      , 
 
 estava situada a mitjan camí entre Lleida i Osca , fet que porta molts experts a identificar -la amb 
 V      V       S A      N    S     N      C N    , N   P   V     D     N       S V           P   S   
