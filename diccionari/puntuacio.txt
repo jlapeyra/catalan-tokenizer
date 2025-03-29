@@ -1,0 +1,21 @@
+Fd :
+Fc ,
+Fla {
+Flt }
+Fs ...
+Faa ¡
+Fat !
+Fg -
+Fpa (
+Fpt )
+Ft %
+Fp .
+Fia ¿
+Fit ?
+Fe " '
+Fra " ' « “ ‘
+Frc " ' » ” ’
+Fx ;
+Fh /
+Fca [
+Fct ]

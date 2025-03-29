@@ -16,11 +16,15 @@ class WordInfo:
     def __lt__(self, other:'WordInfo'):
         return self.__tuple__() < other.__tuple__()
 
+
+class Entry(WordInfo):
+    pass
+
 def getDiccionari():
-    print('getDiccionari...')
+    #print('getDiccionari...')
     with open('diccionari/diccionari.txt', 'r', encoding='utf-8') as f:
         r = [WordInfo(*line.split()) for line in f]
-    print('getDiccionari done')
+    #print('getDiccionari done')
     return r
     
 class Pos:

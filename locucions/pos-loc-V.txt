@@ -1,0 +1,896 @@
+VAIP3P0 anar_a_parar anat_a_parar
+anat: VMP00SM0
+a: SPS00, NCFS000
+parar: VMN00000
+
+VAIP3S0 anar_a_parar va_a_parar
+va: VAIP3S00
+a: SPS00, NCFS000
+parar: VMN00000
+
+VAIP3S0 anar_per_llarg va_per_llarg
+va: VAIP3S00
+per: SPS00, NCMS000
+llarg: RG, NCMS000, AQ0MS0
+
+VM00000 veure-s_amb_cor veure_amb_cor
+veure: VMN00000
+amb: SPS00
+cor: NCMS000
+
+VMG0000 deixar_de_banda deixant_de_banda
+deixant: VMG00000
+de: SPS00, NCFS000
+banda: NCFS000
+
+VMG0000 dir_la_seva dient_la_nostra
+dient: VMG00000
+la: PP3FSA00, DA0FS0, NCMS000
+nostra: DP1FSP, PX1FS0P0, DP1FS0P0, AP1FS0P0
+
+VMG0000 donar_a_conèixer donant_a_conèixer
+donant: VMG00000
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMG0000 donar_suport donant_suport
+donant: VMG00000
+suport: VMIP1S0B
+
+VMG0000 dur_a_terme duent_a_terme
+duent: VMG00000
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMG0000 fer_referència fent_referència
+fent: VMG00000
+referència: NCFS000
+
+VMG0000 fer_servir fent_servir
+fent: VMG00000
+servir: VMN00000
+
+VMG0000 pixar_fora_de_test pixant_fora_de_test
+pixant: VMG00000
+fora: VSSI3S03
+de: SPS00, NCFS000
+test: VMIP1S0B
+
+VMG0000 portar_a_terme portant_a_terme
+portant: VMG00000
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMG0000 tenir_en_compte tenint_en_compte
+tenint: VMG00000
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMIC3P0 fer_bé farien_bé
+farien: VMIC3P00
+bé: RG, CC, NCMS000, I
+
+VMIC3S0 deixar_anar deixaria_anar
+deixaria: VMIC3S00
+anar: VMN00000
+
+VMIC3S0 dur_a_terme duria_a_terme
+duria: VMIC3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIC3S0 entrar_en_vigor entraria_en_vigor
+entraria: VMIC3S00
+en: PP3CN000, SPS00, DA0MS0
+vigor: NCCS000
+
+VMIF1P0 trobar_a_faltar trobarem_a_faltar
+trobarem: VMIF1P00
+a: SPS00, NCFS000
+faltar: VMN00000
+
+VMIF3P0 anar_a_parar aniran_a_parar
+aniran: VMIF3P00
+a: SPS00, NCFS000
+parar: VMN00000
+
+VMIF3P0 donar_a_conèixer donaran_a_conèixer
+donaran: VMIF3P00
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMIF3P0 dur_a_terme duran_a_terme
+duran: VMIF3P00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIF3P0 formar_part formaran_part
+formaran: VMIF3P00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIF3P0 posar_en_funcionament posaran_en_funcionament
+posaran: VMIF3P00
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMIF3P0 posar_en_marxa posaran_en_marxa
+posaran: VMIF3P00
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMIP3S00
+
+VMIF3P0 posar_fi posaran_fi
+posaran: VMIF3P00
+fi: NCCS000, AQ0MS0, NCFS000
+
+VMIF3P0 prendre_part prendran_part
+prendran: VMIF3P00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIF3P0 sortir-hi_guanyant sortiran_guanyant
+sortiran: VMIF3P00
+guanyant: VMG00000
+
+VMIF3P0 tenir_lloc tindran_lloc
+tindran: VMIF3P00
+lloc: NCMS000
+
+VMIF3S0 anar_se'n_a_fer_punyetes se'n_anirà_a_fer_punyetes
+se'n: 
+anirà: VMIF3S00
+a: SPS00, NCFS000
+fer: VMIP3S0B
+punyetes: NCFP000
+
+VMIF3S0 donar_a_conèixer donarà_a_conèixer
+donarà: VMIF3S00
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMIF3S0 donar_cabuda donarà_cabuda
+donarà: VMIF3S00
+cabuda: VMP00SF0
+
+VMIF3S0 donar_pas donarà_pas
+donarà: VMIF3S00
+pas: VMIP1S0B
+
+VMIF3S0 dur_a_terme durà_a_terme
+durà: VMIF3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIF3S0 entrar_en_funcionament entrarà_en_funcionament
+entrarà: VMIF3S00
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMIF3S0 fer-se_càrrec farà_càrrec
+farà: VMIF3S00
+càrrec: NCMS000
+
+VMIF3S0 fer_enrere farà_enrere
+farà: VMIF3S00
+enrere: RG
+
+VMIF3S0 fer_falta farà_falta
+farà: VMIF3S00
+falta: VMIP3S00
+
+VMIF3S0 fer_servir farà_servir
+farà: VMIF3S00
+servir: VMN00000
+
+VMIF3S0 fer_servir farà_sevir
+farà: VMIF3S00
+sevir: NCMS000
+
+VMIF3S0 portar_a_terme portarà_a_terme
+portarà: VMIF3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIF3S0 posar_en_funcionament posarà_en_funcionament
+posarà: VMIF3S00
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMIF3S0 posar_en_marxa posarà_en_marxa
+posarà: VMIF3S00
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMIP3S00
+
+VMIF3S0 posar_fi posarà_fi
+posarà: VMIF3S00
+fi: NCCS000, AQ0MS0, NCFS000
+
+VMIF3S0 tenir_en_compte tindrà_en_compte
+tindrà: VMIF3S00
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMIF3S0 tenir_lloc tindrà_lloc
+tindrà: VMIF3S00
+lloc: NCMS000
+
+VMII3S0 formar_part formava_part
+formava: VMII3S00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMII3S0 portar_a_terme portava_a_terme
+portava: VMII3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMII3S0 posar_en_dubte posava_en_dubte
+posava: VMII3S00
+en: PP3CN000, SPS00, DA0MS0
+dubte: VMIP1S0V
+
+VMII3S0 tenir_lloc tenia_lloc
+tenia: VMII3S00
+lloc: NCMS000
+
+VMIP1P0 formar_part formem_part
+formem: VMIP1P00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIP1S0 fer_servir faig_servir
+faig: VMIP1S00
+servir: VMN00000
+
+VMIP3P0 donar_a_conèixer donen_a_conèixer
+donen: VMIP3P00
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMIP3P0 donar_resposta donen_resposta
+donen: VMIP3P00
+resposta: VMP00SF0
+
+VMIP3P0 donar_suport donen_suport
+donen: VMIP3P00
+suport: VMIP1S0B
+
+VMIP3P0 dur_a_terme duen_a_terme
+duen: VMIP3P00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIP3P0 fer_acte_de_presència fan_acte_de_presència
+fan: VMIP3P00
+acte: NCMS000
+de: SPS00, NCFS000
+presència: NCFS000
+
+VMIP3P0 fer_referència fan_referència
+fan: VMIP3P00
+referència: NCFS000
+
+VMIP3P0 fer_servir fan_servir
+fan: VMIP3P00
+servir: VMN00000
+
+VMIP3P0 formar_part formen_part
+formen: VMIP3P00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIP3P0 plantar_cara planten_cara
+planten: VMIP3P00
+cara: NCFS000, AQ0FS0
+
+VMIP3P0 posar_de_manifest posen_de_manifest
+posen: VMIP3P00
+de: SPS00, NCFS000
+manifest: VMIP1S0B
+
+VMIP3P0 posar_en_pràctica posen_en_pràctica
+posen: VMIP3P00
+en: PP3CN000, SPS00, DA0MS0
+pràctica: NCFS000, AQ0FS0
+
+VMIP3P0 prendre_part prenen_part
+prenen: VMIP3P00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIP3P0 tenir_a_veure tenen_a_veure
+tenen: VMIP3P00
+a: SPS00, NCFS000
+veure: VMN00000
+
+VMIP3P0 tenir_en_compte tenen_en_compte
+tenen: VMIP3P00
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMIP3P0 tenir_lloc tenen_lloc
+tenen: VMIP3P00
+lloc: NCMS000
+
+VMIP3S0 deixar_se_caure es_deixa_caure
+es: DA0MN0, NCFP000, P0300000
+deixa: VMIP3S00
+caure: VMN00000
+
+VMIP3S0 donar_lloc dóna_lloc
+dóna: VMIP3S00
+lloc: NCMS000
+
+VMIP3S0 dur_a_terme duu_a_terme
+duu: VMIP3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIP3S0 estar_enganxat està_enganxada
+està: VMIP3S00
+enganxada: VMP00SF0
+
+VMIP3S0 fer-se_càrrec fa_càrrec
+fa: VMIP3S00
+càrrec: NCMS000
+
+VMIP3S0 fer_bé fa_bé
+fa: VMIP3S00
+bé: RG, CC, NCMS000, I
+
+VMIP3S0 fer_falta fa_falta
+fa: VMIP3S00
+falta: VMIP3S00
+
+VMIP3S0 fer_referència fa_referència
+fa: VMIP3S00
+referència: NCFS000
+
+VMIP3S0 fer_servir fa_servir
+fa: VMIP3S00
+servir: VMN00000
+
+VMIP3S0 formar_part forma_part
+forma: VMIP3S00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMIP3S0 pagar_la_pena paga_la_pena
+paga: VMIP3S00
+la: PP3FSA00, DA0FS0, NCMS000
+pena: VMIP3S00
+
+VMIP3S0 portar_a_terme porta_a_terme
+porta: VMIP3S00
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMIP3S0 posar_de_manifest posa_de_manifest
+posa: VMIP3S00
+de: SPS00, NCFS000
+manifest: VMIP1S0B
+
+VMIP3S0 posar_de_relleu posa_de_relleu
+posa: VMIP3S00
+de: SPS00, NCFS000
+relleu: NCMS000
+
+VMIP3S0 posar_en_contacte posa_en_contacte
+posa: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+contacte: VMIP1S0V
+
+VMIP3S0 posar_en_dubte posa_en_dubte
+posa: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+dubte: VMIP1S0V
+
+VMIP3S0 posar_en_funcionament posa_en_funcionament
+posa: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMIP3S0 posar_en_marxa posa_en_marxa
+posa: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMIP3S00
+
+VMIP3S0 posar_en_servei posa_en_servei
+posa: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+servei: NCMS000
+
+VMIP3S0 prendre_partit pren_partit
+pren: VMIP3S00
+partit: VMP00SM0
+
+VMIP3S0 sortir_hi_guanyant hi_surt_guanyant
+hi: PP3CN000
+surt: VMIP3S00
+guanyant: VMG00000
+
+VMIP3S0 tenir_en_compte té_en_compte
+té: VMIP3S00
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMIP3S0 tenir_lloc té_lloc
+té: VMIP3S00
+lloc: NCMS000
+
+VMIP3S0 tirar_endavant tira_endavant
+tira: VMIP3S00
+endavant: RG
+
+VMIP3S0 trobar_a_faltar troba_a_faltar
+troba: VMIP3S00
+a: SPS00, NCFS000
+faltar: VMN00000
+
+VMIP3S0 valer_la_pena val_la_pena
+val: VMIP3S00
+la: PP3FSA00, DA0FS0, NCMS000
+pena: VMIP3S00
+
+VMIP3S0 venir_de_gust ve_de_gust
+ve: VMIP3S00
+de: SPS00, NCFS000
+gust: VMIP1S0B
+
+VMIP3S0 voler_dir vol_dir
+vol: VMIP3S00
+dir: VMN00000
+
+VMIS3S0 formar_part formà_part
+formà: VMIS3S00
+part: NCMS000, AQ0MS0, NCFS000
+
+VMM03S0 dur_a_terme dugui_a_terme
+dugui: VMM03S0Y
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMN0000 baixar_la_guàrdia baixar_la_guàrdia
+baixar: VMN00000
+la: PP3FSA00, DA0FS0, NCMS000
+guàrdia: NCCS000
+
+VMN0000 deixar_de_banda deixar_de_banda
+deixar: VMN00000
+de: SPS00, NCFS000
+banda: NCFS000
+
+VMN0000 deixar_de_costat deixar_de_costat
+deixar: VMN00000
+de: SPS00, NCFS000
+costat: VMP00SM0
+
+VMN0000 donar_a_conèixer donar_a_conèixer
+donar: VMN00000
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMN0000 donar_a_entendre donar_a_entrendre
+donar: VMN00000
+a: SPS00, NCFS000
+entrendre: 
+
+VMN0000 donar_d'_alta donar_d'_alta
+donar: VMN00000
+d': SPS00
+alta: NCFS000, AQ0FS0
+
+VMN0000 donar_lloc donar_lloc
+donar: VMN00000
+lloc: NCMS000
+
+VMN0000 donar_pas donar_pas
+donar: VMN00000
+pas: VMIP1S0B
+
+VMN0000 donar_peu donar_peu
+donar: VMN00000
+peu: NCMS000
+
+VMN0000 donar_resposta donar_resposta
+donar: VMN00000
+resposta: VMP00SF0
+
+VMN0000 donar_sortida donar_sortida
+donar: VMN00000
+sortida: VMP00SF0
+
+VMN0000 donar_suport donar_suport
+donar: VMN00000
+suport: VMIP1S0B
+
+VMN0000 donar_testimoni donar_testimoni
+donar: VMN00000
+testimoni: NCCS000
+
+VMN0000 dur_a_terme dur_a_terme
+dur: VMN00000
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMN0000 entrar_en_funcionament entrar_en_funcionament
+entrar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMN0000 fer-se_càrrec fer-se_càrrec
+fer-se: 
+càrrec: NCMS000
+
+VMN0000 fer-se_càrrec fer_càrrec
+fer: VMN00000
+càrrec: NCMS000
+
+VMN0000 fer_enrere fer_enrere
+fer: VMN00000
+enrere: RG
+
+VMN0000 fer_falta fer_falta
+fer: VMN00000
+falta: VMM02S00
+
+VMN0000 fer_fora fer_fora
+fer: VMN00000
+fora: VSSI3S03
+
+VMN0000 fer_front fer_front
+fer: VMN00000
+front: NCMS000
+
+VMN0000 fer_la_nostra fer_la_nostra
+fer: VMN00000
+la: PP3FSA00, DA0FS0, NCMS000
+nostra: DP1FSP, PX1FS0P0, DP1FS0P0, AP1FS0P0
+
+VMN0000 fer_passar fer_passar
+fer: VMN00000
+passar: VMN00000
+
+VMN0000 fer_servir fer_servir
+fer: VMN00000
+servir: VMN00000
+
+VMN0000 fer_valer fer_valer
+fer: VMN00000
+valer: VMN00000
+
+VMN0000 fer_veure fer_veure
+fer: VMN00000
+veure: VMN00000
+
+VMN0000 fer_ús fer_ús
+fer: VMN00000
+ús: VMIP1S0B
+
+VMN0000 ferse_càrrec fer_càrrec
+fer: VMN00000
+càrrec: NCMS000
+
+VMN0000 formar_part formar_part
+formar: VMN00000
+part: NCMS000, AQ0MS0, NCFS000
+
+VMN0000 passar_per_alt passar_per_alt
+passar: VMN00000
+per: SPS00, NCMS000
+alt: RG, NCMS000, AQ0MS0
+
+VMN0000 perdre_de_vista perdre_de_vista
+perdre: VMN00000
+de: SPS00, NCFS000
+vista: VMP00SF0
+
+VMN0000 petar_de_riure petar_de_riure
+petar: VMN00000
+de: SPS00, NCFS000
+riure: VMN00000
+
+VMN0000 portar_a_la_pràctica portar_a_la_pràctica
+portar: VMN00000
+a: SPS00, NCFS000
+la: PP3FSA00, DA0FS0, NCMS000
+pràctica: NCFS000, AQ0FS0
+
+VMN0000 portar_a_terme portar_a_terme
+portar: VMN00000
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMN0000 posar_de_relleu posar_de_relleu
+posar: VMN00000
+de: SPS00, NCFS000
+relleu: NCMS000
+
+VMN0000 posar_el_dit_a_la_llaga posar_el_dit_a_la_llaga
+posar: VMN00000
+el: DA0MS0, PP3MSA00
+dit: VMP00SM0
+a: SPS00, NCFS000
+la: PP3FSA00, DA0FS0, NCMS000
+llaga: VMM02S00
+
+VMN0000 posar_en_contacte posar_en_contacte
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+contacte: VMIP1S0V
+
+VMN0000 posar_en_dubte posar_en_dubte
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+dubte: VMIP1S0V
+
+VMN0000 posar_en_funcionament posar_en_funcionament
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMN0000 posar_en_marxa posar_en_marxa
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMM02S00
+
+VMN0000 posar_en_pràctica posar_en_pràctica
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+pràctica: NCFS000, AQ0FS0
+
+VMN0000 posar_en_relleu posar_en_relleu
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+relleu: NCMS000
+
+VMN0000 posar_en_servei posar_en_servei
+posar: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+servei: NCMS000
+
+VMN0000 posar_fi posar_fi
+posar: VMN00000
+fi: NCCS000, AQ0MS0, NCFS000
+
+VMN0000 posar_èmfasi posar_èmfasi
+posar: VMN00000
+èmfasi: NCCS000
+
+VMN0000 prendre_nota prendre_nota
+prendre: VMN00000
+nota: VMM02S00
+
+VMN0000 prendre_part prendre_part
+prendre: VMN00000
+part: NCMS000, AQ0MS0, NCFS000
+
+VMN0000 tenir_en_compte tenir_en_compte
+tenir: VMN00000
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMN0000 tenir_lloc tenir_lloc
+tenir: VMN00000
+lloc: NCMS000
+
+VMN0000 tirar_endavant tirar_endavant
+tirar: VMN00000
+endavant: RG
+
+VMN0000 trobar_a_faltar trobar_a_faltar
+trobar: VMN00000
+a: SPS00, NCFS000
+faltar: VMN00000
+
+VMN0000 valer_la_pena valer_la_pena
+valer: VMN00000
+la: PP3FSA00, DA0FS0, NCMS000
+pena: VMM02S00
+
+VMN0000 venir_al_món venir_al_món
+venir: VMN00000
+al: VMIP1S0B
+món: NCMS000
+
+VMP00SM anar_a_parar anat_a_parar
+anat: VMP00SM0
+a: SPS00, NCFS000
+parar: VMN00000
+
+VMP00SM donar_a_conèixer donat_a_conèixer
+donat: VMP00SM0
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMP00SM donar_de_baixa donat_de_baixa
+donat: VMP00SM0
+de: SPS00, NCFS000
+baixa: VMM02S00
+
+VMP00SM donar_suport donat_suport
+donat: VMP00SM0
+suport: VMIP1S0B
+
+VMP00SM dur_a_terme dut_a_terme
+dut: VMP00SM0
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMP00SM entrar_en_contacte entrat_en_contacte
+entrat: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+contacte: VMIP1S0V
+
+VMP00SM entrar_en_funcionament entrat_en_funcionament
+entrat: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMP00SM fer_referència fet_referència
+fet: VMP00SM0
+referència: NCFS000
+
+VMP00SM fer_servir fet_servir
+fet: VMP00SM0
+servir: VMN00000
+
+VMP00SM fer_ús fet_ús
+fet: VMP00SM0
+ús: VMIP1S0B
+
+VMP00SM ferse_càrrec fet_càrrec
+fet: VMP00SM0
+càrrec: NCMS000
+
+VMP00SM formar_part format_part
+format: VMP00SM0
+part: NCMS000, AQ0MS0, NCFS000
+
+VMP00SM portar_a_terme portat_a_terme
+portat: VMP00SM0
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMP00SM posar_de_manifest posat_de_manifest
+posat: VMP00SM0
+de: SPS00, NCFS000
+manifest: VMIP1S0B
+
+VMP00SM posar_de_relleu posat_de_relleu
+posat: VMP00SM0
+de: SPS00, NCFS000
+relleu: NCMS000
+
+VMP00SM posar_en_dubte posat_en_dubte
+posat: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+dubte: VMIP1S0V
+
+VMP00SM posar_en_funcionament posat_en_funcionament
+posat: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMP00SM posar_en_marxa posat_en_marxa
+posat: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMM02S00
+
+VMP00SM posar_fi posat_fi
+posat: VMP00SM0
+fi: NCCS000, AQ0MS0, NCFS000
+
+VMP00SM prendre_posició pres_posició
+pres: VMP00SM0
+posició: NCFS000
+
+VMP00SM sortir-hi_perdent sortit_perdent
+sortit: VMP00SM0
+perdent: VMG00000
+
+VMP00SM tenir_en_compte tingut_en_compte
+tingut: VMP00SM0
+en: PP3CN000, SPS00, DA0MS0
+compte: VMIP1S0V
+
+VMP00SM tenir_lloc tingut_lloc
+tingut: VMP00SM0
+lloc: NCMS000
+
+VMSI3S0 anar_a_parar anés_a_parar
+anés: VMSI3S01
+a: SPS00, NCFS000
+parar: VMN00000
+
+VMSI3S0 dur_a_terme dugués_a_terme
+dugués: VMSI3S01
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMSI3S0 ferse_càrrec fes_càrrec
+fes: VMSI3S01
+càrrec: NCMS000
+
+VMSI3S0 tenir_en_compte tingués_en_compte
+tingués: VMSI3S01
+en: PP3CN000, SPS00, DA0MS0
+compte: VMSP3S0V
+
+VMSI3S0 tenir_lloc tingués_lloc
+tingués: VMSI3S01
+lloc: NCMS000
+
+VMSP1S0 entrar_en_servei entri_en_servei
+entri: VMSP1S0Y
+en: PP3CN000, SPS00, DA0MS0
+servei: NCMS000
+
+VMSP3P0 donar_a_conèixer donin_a_conèixer
+donin: VMSP3P0Y
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMSP3P0 donar_suport donin_suport
+donin: VMSP3P0Y
+suport: VMIP1S0B
+
+VMSP3P0 enganxar-se_els_dits enganxin_els_dits
+enganxin: VMSP3P0Y
+els: PP3CP000, DA0MP0
+dits: VMP00PM0
+
+VMSP3P0 posar_en_funcionament posin_en_funcionament
+posin: VMSP3P0Y
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMSP3P0 tenir_lloc tinguin_lloc
+tinguin: VMSP3P0Y
+lloc: NCMS000
+
+VMSP3S0 donar_a_conèixer doni_a_conèixer
+doni: VMSP3S0Y
+a: SPS00, NCFS000
+conèixer: VMN00000
+
+VMSP3S0 donar_suport doni_suport
+doni: VMSP3S0Y
+suport: VMIP1S0B
+
+VMSP3S0 entrar_en_funcionament entri_en_funcionament
+entri: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+funcionament: NCMS000
+
+VMSP3S0 entrar_en_vigor entri_en_vigor
+entri: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+vigor: NCCS000
+
+VMSP3S0 fer-se_càrrec faci_càrrec
+faci: VMSP3S0Y
+càrrec: NCMS000
+
+VMSP3S0 fer_servir faci_servir
+faci: VMSP3S0Y
+servir: VMN00000
+
+VMSP3S0 portar_a_terme porti_a_terme
+porti: VMSP3S0Y
+a: SPS00, NCFS000
+terme: NCMS000
+
+VMSP3S0 posar_en_marxa posi_en_marxa
+posi: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+marxa: VMM02S00
+
+VMSP3S0 prendre_en_consideració prengui_en_consideració
+prengui: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+consideració: NCFS000
+
+VMSP3S0 tenir_en_compte tingui_en_compte
+tingui: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+compte: VMSP3S0V
+
+VMSP3S0 tenir_en_consideració tingui_en_consideració
+tingui: VMSP3S0Y
+en: PP3CN000, SPS00, DA0MS0
+consideració: NCFS000
+

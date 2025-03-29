@@ -10,17 +10,36 @@ from typing import Iterable
 from pos import DICCIONARI, categoriesPossibles, splitWords
 from copy import copy
 
-class PosModel:
-    idx2pos = copy(pos.pos_list)
-    pos2idx = {p:i for i,p in enumerate(idx2pos)}
-    num_pos = len(idx2pos)
+def allPos(data:list[pos.WordInfo]=[]):
+    pos_dicc = set(wi.pos for wi in pos.RAW_DICCIONARI)
+    pos_punt = set(p for p in pos.PUNTUACIO.values())
+    pos_data = set(wi.pos for wi in data)
+    pos_others = {'W', 'Fz', 'Z', 'Zp'}
+    pos_boundaries = {'$', '-'}
+    return pos_dicc | pos_data | pos_punt | pos_others | pos_boundaries
 
-    def __init__(self, name, alpha=0.5):
+
+
+class PosModel:
+
+    def __init__(self, name, alpha=0.5, pos_list:Iterable=None, pos_len=1):
+        if pos_list is None:
+            pos_list = copy(pos.pos_list)
+        else:
+            pos_list = sorted(set(p[:pos_len] for p in pos_list))
+
+        self.pos_len = pos_len
+        self.idx2pos = pos_list
+        self.pos2idx = {p:i for i,p in enumerate(pos_list)}
+        self.num_pos = len(pos_list)
+
         N = self.num_pos
         count_back = np.zeros((N, N), dtype=np.int64)
-        with open(f'model/{name}.1pos.2gram.txt') as f:
+        with open(f'model/{name}.{pos_len}pos.2gram.txt') as f:
             for line in f:
                 k1, k2, num = line.split()
+                if k1 not in self.pos2idx or k2 not in self.pos2idx:
+                    continue
                 k1 = self.pos2idx[k1]
                 k2 = self.pos2idx[k2]
                 num = int(num)
@@ -31,13 +50,14 @@ class PosModel:
         self.prob_cond_fwd = probability.distribution(count_fwd + alpha)
         self.prob_cond_back = probability.distribution(count_back + alpha)
 
-        assert np.array_equal(sum(count_back), sum(count_fwd))
         self.prob_a_priori = probability.distribution(np.ones(N, dtype=np.float64))
 
         count_by_type = defaultdict(lambda: np.zeros(N, dtype=np.int64))
-        with open(f'model/{name}.1pos.count.txt', encoding='utf-8') as f:
+        with open(f'model/{name}.{pos_len}pos.count.txt', encoding='utf-8') as f:
             for line in f:
                 word, pos_, num = line.split()
+                if k1 not in self.pos2idx or k2 not in self.pos2idx:
+                    continue
                 k = self.pos2idx[pos_]
                 num = int(num)
                 count_by_type[word][k] = num
@@ -51,13 +71,13 @@ class PosModel:
     def getBoolArrayPos(self, pos_list:Iterable[str]):
         ret = np.zeros(self.num_pos, dtype=bool)
         for pos_ in pos_list:
-            ret[self.pos2idx[pos_]] = True
+            ret[self.pos2idx[pos_[:self.pos_len]]] = True
         return ret
 
     def getCountArrayPos(self, pos_list:Iterable[str]):
         ret = np.zeros(self.num_pos, dtype=np.int32)
         for pos_ in pos_list:
-            ret[self.pos2idx[pos_]] += 1
+            ret[self.pos2idx[pos_[:self.pos_len]]] += 1
         return ret
     
     def getPosAllCase(self, word:str):
@@ -72,15 +92,15 @@ class PosModel:
         ], reverse=True)
 
 
-    def getProbPosWord(self, paraula:str, inici_frase:bool):
-        if paraula.lower() in self.prob_by_type:
-            return self.prob_by_type[paraula.lower()]
+    def getProbPosWord(self, token:str, inici_frase:bool):
+        if token.lower() in self.prob_by_type:
+            return self.prob_by_type[token.lower()]
         else:
-            categories = categoriesPossibles(paraula, inici_frase)
+            categories = categoriesPossibles(token, inici_frase)
             if not categories: 
                 return probability.uniform(self.num_pos)
             return probability.distribution(self.getBoolArrayPos(categories))
-        #prob *= getBoolArrayPos(categoriesPossibles(paraula, inici_frase))
+        #prob *= getBoolArrayPos(categoriesPossibles(token, inici_frase))
         #if not np.any(prob): return copy(prob_a_priori)
         #return probability.distribution(prob)
 
@@ -98,69 +118,75 @@ class PosModel:
             prev_pos_vec = pos_vecs[i-1] if i>0 else boundary_pos_vec
             pos_vecs[i] = probability.combination(pos_vecs[i], (self.prob_cond_fwd @ prev_pos_vec))
             #pos_vecs[i] = (prev_pos_vec @ prob_cond_fwd) * pos_vecs[i] / prob_a_priori
-        print()
+        #print()
 
         for i in reversed(range(len(pos_vecs))):
             prev_pos_vec = pos_vecs[i+1] if i<len(pos_vecs)-1 else boundary_pos_vec
             pos_vecs[i] = probability.combination(pos_vecs[i], (self.prob_cond_back @ prev_pos_vec))
             #pos_vecs[i] = (prev_pos_vec @ prob_cond_back) * pos_vecs[i] / prob_a_priori
-        print()
+        #print()
 
-def posMax(vec):
-    imax = max(range(PosModel.num_pos), key=lambda i: vec[i])
-    return PosModel.idx2pos[imax]
+        return pos_vecs
+
+    def posMax(self, vec):
+        imax = max(range(self.num_pos), key=lambda i: vec[i])
+        return self.idx2pos[imax]
 
     
-def print_pos(words, pos_vecs, / , limit=200):
-    for w,probs in zip(words[:limit], pos_vecs):
-        print(w, end=': ')
-        for i,p in enumerate(probs):
-            if p > 0:
-                print(f'{PosModel.idx2pos[i]}:{p:.4f}', end=', ')
+    def print_pos(self, words, pos_vecs, / , limit=200):
+        for w,probs in zip(words[:limit], pos_vecs):
+            print(w, end=': ')
+            for i,p in enumerate(probs):
+                if p > 0:
+                    print(f'{self.idx2pos[i]}:{p:.4f}', end=', ')
+            print()
         print()
-    print()
 
 
 
-def train():
 
-    # 2-gram of POS
+def train(name, data_file, format='line', n=2, pos_size=1):
+
+    # N-gram of POS
     # probability of POS given previous/next POS
 
-    n = 2
-    pos_size = 2
     ngram = distribution.NGram(n, ['-'])
-    for filename in glob('corpus/train.pos.txt'):
-        #dataset = sys.argv[1]
-        with open(filename, 'r', encoding='utf-8') as f:
-            assignacio = pos.readAssignacio(f)
-        pos_list_full = [pos for _, pos in assignacio]
-        for pos_list in utils.splitList(pos_list_full, seps=('Fp', '$'), not_empty=True):
-            ngram.feed(pos_list)
-    with open(f'model/pos{pos_size}.{n}gram.txt', 'w') as f:
+    with open(data_file, 'r', encoding='utf-8') as f:
+        match format:
+            case 'insti': assignacio = pos.readAssignacio(f)
+            case 'line': assignacio = [pos.WordInfo(*line.split()) for line in f]
+            case _: raise ValueError(format)
+    pos_list_full = [wi.pos[:pos_size] for wi in assignacio]
+    for pos_list in utils.splitList(pos_list_full, seps=('Fp', '$', '.'), not_empty=True):
+        ngram.feed(pos_list)
+    with open(f'model/{name}.{pos_size}pos.{n}gram.txt', 'w') as f:
         ngram.save(f)
 
 
     # probability of POS given word
 
     probs = distribution.ConditionalDistribution()
-    for fn in glob('corpus/train.pos.txt'):
-        with open(fn, 'r', encoding='utf-8') as f:
-            assignacio = pos.readAssignacio(f)
-        for i, (paraula, pos_) in enumerate(assignacio):
-            if not re.match(pos.RE_PUNCTUATION+'$', paraula.lower()):
-                pos_pos = pos.categoriesPossibles(paraula)
-                if pos_pos and pos_ not in pos_pos:
-                    print(f'WARNING: {paraula} {pos_} {pos_pos}', \
-                          '\t'+' '.join(w for w,p in assignacio[i-5:i+5]))
-                probs.add(paraula.lower(), pos_)
+    inici_frase = True
+    for wi in assignacio:
+        if not re.match(pos.RE_PUNCTUATION+'$', wi.word) and '_' not in wi.word:
+            pos_ann = wi.pos[:pos_size]
+            pos_dic = pos.categoriesPossibles(wi.word, inici_frase=inici_frase)
+            pos_dic = [pos_[:pos_size] for pos_ in pos_dic]
+            word = wi.word.lower()
+            #if wi.pos[:2] != 'NP':
+            #    word = word.lower()
+            #if pos_dic and pos_ann not in pos_dic:
+            #    print(f'WARNING: {word} {pos_ann} {pos_dic}')
+            probs.add(word, pos_ann)
+        inici_frase = (wi.pos in ('$', 'Fp'))
     for key in list(probs.keys()):
-        if probs[key].total() < 8:
+        if probs[key].total() <= 20:
             del probs[key]
-    with open(f'model/pos{pos_size}.count.txt', 'w', encoding='utf-8') as f:
+    with open(f'model/{name}.{pos_size}pos.count.txt', 'w', encoding='utf-8') as f:
         probs.save(f)
 
 
 
 if __name__ == '__main__':
-    main()
+    train(name='ancora', data_file='corpus/ancora-train.pos.txt', format='line', n=2, pos_size=1)
+    train(name='ancora', data_file='corpus/ancora-train.pos.txt', format='line', n=2, pos_size=2)

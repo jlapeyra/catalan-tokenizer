@@ -37,8 +37,8 @@ class ConditionalDistribution(defaultdict[object, Distribution]):
     def __init__(self) -> None:
         super(ConditionalDistribution, self).__init__(Distribution)
 
-    def add(self, key1, key2):
-        self[key1][key2] += 1
+    def add(self, key1, key2, num=1):
+        self[key1][key2] += num
 
     def save(self, file:TextIOWrapper):
         for key1 in sorted(self):

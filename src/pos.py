@@ -10,11 +10,12 @@ import xml.etree.ElementTree as ET
 
 RAW_DICCIONARI = getDiccionari()
 
-CONTRACCIONS_INICIALS = '|'.join({x.word for x in RAW_DICCIONARI if x.word[-1:] in ('-', "'") and x.word.islower()})
-CONTRACCIONS_FINALS = '|'.join({x.word for x in RAW_DICCIONARI if x.word[:1] in ('-', "'") and x.word.islower()})
+aux_raw_dict = [x.word for x in RAW_DICCIONARI if "'" in x.word or '-' in x.word ]
+CONTRACCIONS_INICIALS = '|'.join({w for w in aux_raw_dict if w[-1] in ('-', "'") and w.islower()})
+CONTRACCIONS_FINALS   = '|'.join({w for w in aux_raw_dict if w[0] in ('-', "'") and w.islower()})
 
 
-pos_list = ['A','C','D','F','I','N','P','R','S','V','Y','.',',','-','*','?','$']
+pos_list = ['A','C','D','F','I','N','P','R','S','V','Y','*','$']
 
 def splitContraccions(word:str):
     if not ("'" in word or "-" in word):
@@ -37,14 +38,6 @@ RE_NUM = r'((\d([\., ]\d)*|\d)(\w*|%))'
 RE_PUNCTUATION = r'(\.\.\.|[,;:.()?!"%_]|((?<=\s)|^)[^\w\s]|[^\w\s](?=\s|$))'
 RE_NUMEROS_ROMANS = r'([IVXLCDM]+)'
 
-DIES_SETMANA = ['dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'dissabte', 'diumenge']
-MESOS_ANY = ['gener', 'febrer', 'març', 'abril', 'maig', 'juny', 'juliol', 'agost', 'setembre', 'octubre', 'novembre', 'desembre']
-SEGLES = [
-    "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
-    "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
-    "XXI", "XXII"
-]
-
 
 def splitWords(string:str) -> list[str]:
     return sum((
@@ -57,18 +50,23 @@ def splitWords(string:str) -> list[str]:
     [])
 
 
-DICCIONARI = utils.group(RAW_DICCIONARI, lambda info: info.word)
+DICCIONARI : dict[str, WordInfo] = utils.group(RAW_DICCIONARI, lambda info: info.word)
+
+PUNTUACIO = {}
+
+with open('diccionari/puntuacio.txt', 'r', encoding='utf-8') as f:
+    for line in f:
+        pos_, *tokens = f.read().split()
+        for token in tokens:
+            PUNTUACIO[token] = pos_
+        
 
 
 def categoriesPossibles(paraula:str, inici_frase:bool=False):
     if re.match(RE_PUNCTUATION+'$', paraula):
-        return {'F'}
+        return {PUNTUACIO.get(paraula, 'Fz')}
     elif re.match(RE_NUM+'$', paraula):
-        if paraula.isnumeric() and 100 < int(paraula) < 2100:
-            return {'Z', 'W'}
-        return {'Z'}
-    elif paraula.lower():
-        return {'W'}
+        return {'Zp' if paraula[-1] == '%' else 'Z'}
     elif paraula == '\n':
         return {'$'}
     
@@ -76,15 +74,15 @@ def categoriesPossibles(paraula:str, inici_frase:bool=False):
     if inici_frase or not info_list: 
         info_list.extend(DICCIONARI[paraula.lower()])
 
-    categories = {info.pos[0] for info in info_list}
+    categories = {info.pos for info in info_list}
 
-    if paraula.lower() in DIES_SETMANA or paraula.lower() in MESOS_ANY or paraula in SEGLES:
-        categories.add('W')
+    #if paraula.lower() in DIES_SETMANA or paraula.lower() in MESOS_ANY or paraula in SEGLES:
+    #              categories.add('W')
 
     if not categories and paraula[0].isupper():
-        return {'*'}
+        return {'NP0000'}
 
-    return categories or {'*' if paraula[0].isupper() else '?'}
+    return categories
 
 def buscarCategoriesPossibles(string:str):
     assignacio = []
@@ -98,7 +96,7 @@ def buscarCategoriesPossibles(string:str):
                 (categoria,) = categories
             else:
                 categoria = '?'
-            assignacio.append([paraula, categoria, categories])
+            assignacio.append([paraula, categoria, categories or {'?'}])
         inici_frase = (paraula == '.')
     return assignacio
     
@@ -134,19 +132,20 @@ def printAssignacio(assignacio:list[tuple[str,str]], file:TextIOWrapper, max_len
                     len_line = 0
         printLiniaAssignacio(paragraf_assignacio[start:], file)
 
-def readAssignacio(file:TextIOWrapper) -> list[tuple[str, str]]:
+
+def readAssignacio(file:TextIOWrapper) -> list[WordInfo]:
     lines = file.readlines()
-    retorn = []
+    tuples = []
     for i in range(0, len(lines)-2, 3):
         assert lines[i+2].strip('\n\r') == ''
         words = lines[i].split()
         pos = lines[i+1].split()
         assert len(words) == len(pos)
         if not words:
-            retorn.append(('\n', '$'))
+            tuples.append(('\n', '$'))
         else:
-            retorn.extend(list(zip(words, pos)))
-    return retorn
+            tuples.extend(list(zip(words, pos)))
+    return [WordInfo(word, None, pos) for word, pos in tuples]
         
 # Format ancora (XML)
 
@@ -162,7 +161,7 @@ def readTagsFromXML(filename:str) -> list[WordInfo]:
     return ret
 
 def loadAncora(set:str) -> list[WordInfo]:
-    with open(f'corpus-pos/ancora-{set}.pos.txt', 'r', encoding='utf-8') as file:
+    with open(f'corpus/ancora-{set}.pos.txt', 'r', encoding='utf-8') as file:
         r = [WordInfo(*line.split()) for line in file]
     return r
     
