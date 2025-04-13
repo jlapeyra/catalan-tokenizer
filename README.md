@@ -8,7 +8,7 @@ Naturalment, no pretén superar grans projectes com ChatGPT, però la implementa
 - 🔜 Lemma prediction using n-grams and co-occurrences
 - 🔜 POS and lemma prediction using deep lerning
 
-# Recursos
+## Recursos
 - Diccionari: SOFTCATALÀ - https://github.com/Softcatala/catalan-dict-tools.
 - Corpus anotat: ANCORA - http://clic.ub.edu/corpus
 - Corpus no anotat: VIQUIPÈDIA - https://ca.wikipedia.org
