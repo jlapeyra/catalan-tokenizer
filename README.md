@@ -11,4 +11,4 @@ Naturalment, no pretén superar grans projectes com ChatGPT, però la implementa
 # Recursos
 - Diccionari: SOFTCATALÀ - https://github.com/Softcatala/catalan-dict-tools.
 - Corpus anotat: ANCORA - http://clic.ub.edu/corpus
-- Corpus no anotat: VIQUIPÈDIA - ca.wikipedia.org
+- Corpus no anotat: VIQUIPÈDIA - https://ca.wikipedia.org
