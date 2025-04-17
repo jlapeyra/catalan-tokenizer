@@ -1,5 +1,12 @@
 import numpy as np
 
+def oneHot(size:int, index:int):
+    """Create a one-hot encoded vector of size `size` with a 1 at `index`."""
+    assert 0 <= index < size, f'Index {index} out of bounds for size {size}'
+    ret = np.zeros(size, dtype=np.float32)
+    ret[index] = 1.0
+    return ret
+
 def distribution(matrix:np.ndarray):
     return matrix/sum(matrix)
 

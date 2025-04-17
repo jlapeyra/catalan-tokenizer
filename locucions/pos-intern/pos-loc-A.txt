@@ -1,0 +1,109 @@
+AQ0CN0 a_mitges a_mitges
+a: SPS00
+mitges: NCFP000
+
+AQ0CN0 ad_limina ad_limina
+ad: 
+limina: 
+
+AQ0CN0 anti-le_pen anti-le_pen
+anti: AQ0CS0:
+-: Fg
+Le: * 
+Pen: *
+
+AQ0CN0 d'_emergència d'_emergència
+d': SPS00
+emergència: NCFS000
+
+AQ0CN0 de_facto de_facto
+de: SPS00
+facto: 
+
+AQ0CN0 en_actiu en_actiu
+en: SPS00
+actiu: NCMS000
+
+AQ0CN0 en_directe en_directe
+en: SPS00
+directe: AQ0MS0
+
+AQ0CN0 en_efectiu en_efectiu
+en: SPS00
+efectiu: AQ0MS0
+
+AQ0CN0 en_funcions en_funcions
+en: SPS00
+funcions: NCFP000
+
+AQ0CN0 en_solitari en_solitari
+en: SPS00
+solitari: AQ0MS0
+
+AQ0CN0 en_vigor en_vigor
+en: SPS00
+vigor: NCCS000
+
+AQ0CN0 en_viu en_viu
+en: SPS00
+viu: AQ0MS0
+
+AQ0CN0 in_vitro in_vitro
+in: 
+vitro: 
+
+AQ0CN0 per_càpita per_càpita
+per: SPS00
+càpita: 
+
+AQ0CN0 tot_terreny tot_terreny
+tot: DI0MS0
+terreny: NCMS000
+
+AQ0CS0 extra_otan extra_otan
+extra: AQ0CS0
+OTAN: *
+
+AQ0FPP dut_a_terme dutes_a_terme
+dutes: VMP00PF0
+a: SPS00
+terme: NCMS000
+
+AQ0FS0 esquerra_abertzale esquerra_abertzale
+esquerra: NCFS000
+abertzale: AQ0CS0
+
+AQ0FS0 fer_públic fet_pública
+fet: VMP00SM0
+pública: AQ0FS0
+
+AQ0FSP dut_a_terme duta_a_terme
+duta: VMP00SF0
+a: SPS00
+terme: NCMS000
+
+AQ0FSP portat_a_terme portada_a_terme
+portada: VMP00SF0
+a: SPS00
+terme: NCMS000
+
+AQ0MPP dut_a_terme duts_a_terme
+duts: VMP00PM0
+a: SPS00
+terme: NCMS000
+
+AQ0MPP portat_a_terme portats_a_terme
+portats: VMP00PM0
+a: SPS00
+terme: NCMS000
+
+AQ0MSP dut_a_terme dut_a_terme
+dut: VMP00SM0
+a: SPS00
+terme: NCMS000
+
+AQ0MSP portat_a_terme portat_a_terme
+portat: VMP00SM0
+a: SPS00
+terme: NCMS000
+

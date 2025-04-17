@@ -1,7 +1,7 @@
 **/tmp/
 __pycache__/
 corpus-tools/
-ancora/
+data-raw/
 *.url
 *.tmp
 kk.*

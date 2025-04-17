@@ -1,24 +1,20 @@
 from collections import Counter, defaultdict
 from io import TextIOWrapper
 import math
-import sys
-from typing import Callable, Iterable
+from typing import Sequence
 import numpy as np
+from utils import id, windowed, key_list
+from itertools import chain
+from abc import ABC, abstractmethod
+
 
 ALPHA = 0.1
 
 class Distribution(Counter):
+    # Counter allows __add__
 
     def add(self, item):
         self[item] += 1
-
-    def __add__(self, other):
-        if (isinstance(other, Counter)): 
-            return Distribution(super().__add__(self, other))
-        return Distribution({key:(value + other) for key,value in self.items()})
-    
-    def __div__(self, other):
-        return Distribution({key:(value / other) for key,value in self.items()})
     
     def probability(self, key, alpha:float=ALPHA, num_keys:int=None):
         return (self[key] + alpha)/(self.total() + alpha*(num_keys or len(self.keys())))
@@ -32,19 +28,47 @@ class Distribution(Counter):
     def logProbabilityDistribution(self, alpha:float=ALPHA, num_keys:int=None):
         return Distribution({key: self.logProbability(key, alpha, num_keys) for key in self.keys()})
 
-class ConditionalDistribution(defaultdict[object, Distribution]):
+
+class DoubleKeyDict:
+    @abstractmethod
+    def get(self, k1, k2):
+        pass
+
+    @abstractmethod
+    def priorKeys(self) -> set:
+        pass
+
+    @abstractmethod
+    def posteriorKeys(self) -> set:
+        pass
+
+    def matrix(self) -> np.ndarray:
+        priors = sorted(self.priorKeys())
+        posteriors = sorted(self.posteriorKeys())
+        matrix = np.zeros((len(priors), len(posteriors)))
+        for i, p in enumerate(priors):
+            for j, q in enumerate(posteriors):
+                matrix[i, j] = self.get(p, q)
+        return matrix, priors, posteriors
+
+
+class ConditionalDistribution(defaultdict[object, Distribution], DoubleKeyDict):
+    # counter allows __add__
 
     def __init__(self) -> None:
-        super(ConditionalDistribution, self).__init__(Distribution)
+        super().__init__(Distribution)
 
     def add(self, key1, key2, num=1):
         self[key1][key2] += num
 
+    def __add__(self, other:'ConditionalDistribution'):
+        if isinstance(other, ConditionalDistribution):
+            for key in other.keys():
+                self[key] += other[key]
+
     def save(self, file:TextIOWrapper):
-        for key1 in sorted(self):
-            for key2 in sorted(self[key1]):
-                count = self[key1][key2]
-                print(key1, key2, count, file=file)
+        for keys, count in sorted(self.items()):
+            print(*keys, count, file=file)
                 
     def load(self, file:TextIOWrapper):
         for line in file.readlines():
@@ -52,61 +76,80 @@ class ConditionalDistribution(defaultdict[object, Distribution]):
                 key1, key2, count = line.strip('\n').split()
                 count = int(count)
             except:
-                print(f'Wrong format: expected `key1* key2 num`. Got: "{line}"')
+                raise Exception(f'Wrong format: expected `key1 key2 num`. Got: "{line}"')
             else:
                 self[key1][key2] = count
         return self
+    
+    def priorKeys(self):
+        return set(self.keys())
+    
+    def posteriorKeys(self):
+        return set().union(*(dist.keys() for dist in self.values()))
+    
+pass
 
-        
-class NGram:
+    
+class NGram(Counter, DoubleKeyDict):
+    # Counter allows __add__
 
-    def __init__(self, n:int, default) -> None:
-        self.distributions = defaultdict(Distribution)
+    def __init__(self, n:int, default=None, prune_prior=id, prune_posterior=id, prune=None) -> None:
         self.n = n
         self.default = default
+        if prune is not None:
+            self.prune_posterior = prune
+            self.prune_prior = prune
+        else:
+            self.prune_prior = prune_prior
+            self.prune_posterior = prune_posterior
+        super().__init__()
 
-    def __forall_n_sequence(self, sequence:Iterable, action:Callable):
-        preprocessed = self.default*(self.n-1) + sequence + self.default
-        for i in range((self.n-1), len(preprocessed)):
-            action(self.distributions[tuple(preprocessed[i-(self.n-1) : i])], preprocessed[i])
+    def __sliding_window(self, sequence:Sequence):
+        head, tail = [self.default]*(self.n-1), [self.default]
+        prior     = map(self.prune_prior, sequence)
+        posterior = map(self.prune_posterior, sequence)
+        prior     = chain(head, prior)
+        posterior = chain(posterior, tail)
+        return zip(windowed(prior, self.n-1), posterior)
 
-
-    def feed(self, sequence:Iterable):
-        self.__forall_n_sequence(sequence, Distribution.add)
-
-    def probability(self, sequence:Iterable, alpha:float=ALPHA, num_keys:int=None):
-        prob = 1
-        def update_prob(distribution:Distribution, key):
-            nonlocal prob
-            prob *= distribution.probability(key, alpha, num_keys)
-        self.__forall_n_sequence(sequence, update_prob)
-        return prob
-
-
-    def logProbabity(self, sequence, alpha:float=ALPHA, num_keys:int=None):
-        logprob = 0
-        def update_logprob(distribution:Distribution, key):
-            nonlocal logprob
-            logprob += distribution.logProbability(key, alpha, num_keys)
-        self.__forall_n_sequence(sequence, update_logprob)
-        return logprob
-    
-    def save(self, file:TextIOWrapper):
-        for key1 in sorted(self.distributions):
-            for key2 in sorted(self.distributions[key1]):
-                count = self.distributions[key1][key2]
-                print(*key1, key2, count, file=file)
-                
-    def load(self, file:TextIOWrapper):
-        for line in file.readlines():
-            try:
-                *key1, key2, count = line.strip('\n').split()
-                count = int(count)
-            except:
-                print(f'Wrong format: expected `key1* key2 num`. Got: "{line}"')
-            else:
-                self.distributions[key1][key2] = count
+    def feed(self, sequence:Sequence):
+        super().update(self.__sliding_window(sequence))
         return self
+    
+    def save(self, filename):
+        with open(filename, 'w', encoding='utf-8') as f:
+            for (prior, posterior), count in sorted(self.items()):
+                print(*prior, posterior, count, file=f)
+                
+    def load(self, filename, reverse=False):
+        with open(filename, 'w', encoding='utf-8') as f:
+            for line in f:
+                try:
+                    *keys, count = line.strip('\n').split()
+                    if reverse:
+                        keys = reversed(keys)
+                    *prior, posterior = keys
+                    assert len(prior) + 1 == self.n
+                    count = int(count)
+                except:
+                    raise Exception(f'Wrong format: expected {self.n} keys and a number. Got: "{line}"')
+                else:
+                    prior     = tuple(map(self.prune_prior, prior))
+                    posterior = self.prune_posterior(posterior)
+                    self[prior, posterior] += count
+        return self
+    
+    def priorKeys(self):
+        return {p for p,_ in self.keys()}
+    def posteriorKeys(self):
+        return {p for _,p in self.keys()}
+    
+
+
+
+
+
+
 
 
 class CrossEntropy:
@@ -119,3 +162,5 @@ class CrossEntropy:
 
     def get(self):
         return -1/self.num_elems * self.log_prob
+    
+

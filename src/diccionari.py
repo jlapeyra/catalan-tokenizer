@@ -21,11 +21,12 @@ class Entry(WordInfo):
     pass
 
 def getDiccionari():
-    #print('getDiccionari...')
     with open('diccionari/diccionari.txt', 'r', encoding='utf-8') as f:
-        r = [WordInfo(*line.split()) for line in f]
-    #print('getDiccionari done')
-    return r
+        return [WordInfo(*line.split()) for line in f]
+
+def getLocucions():
+    with open('diccionari/locucions.txt', 'r', encoding='utf-8') as f:
+        return [WordInfo(*line.split()) for line in f]
     
 class Pos:
     NOM = 'N'

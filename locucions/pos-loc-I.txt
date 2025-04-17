@@ -1,5 +1,0 @@
-I valga_'m_déu valga_'m_déu
-valga: VMM03S0V
-'m: PP1CS000
-déu: NCMS000
-

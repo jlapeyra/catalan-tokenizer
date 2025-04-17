@@ -1,0 +1,1477 @@
+SPCMP a_banda_del a_banda_dels
+a: SPS00
+banda: NCFS000
+dels: SP+DA
+
+SPCMP a_canvi_del a_canvi_dels
+a: SPS00
+canvi: NCMS000
+dels: SP+DA
+
+SPCMP a_causa a_causa
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+
+SPCMP a_causa_del a_causa_dels
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+dels: SP+DA
+
+SPCMP a_càrrec_del a_càrrec_dels
+a: SPS00
+càrrec: NCMS000
+dels: SP+DA
+
+SPCMP a_diferència_del a_diferència_dels
+a: SPS00
+diferència: NCFS000
+dels: SP+DA
+
+SPCMP a_favor_del a_favor_dels
+a: SPS00
+favor: NCMS000
+dels: SP+DA
+
+SPCMP a_instàncies_del a_instàncies_dels
+a: SPS00
+instàncies: NCFP000
+dels: SP+DA
+
+SPCMP a_mans_del a_mans_dels
+a: SPS00
+mans: NCFP000, AQ0MS0
+dels: SP+DA
+
+SPCMP a_més_a_més_del a_més_a_més_dels
+a: SPS00
+més: RG, NCMN000, DI0CN0
+a: SPS00
+més: RG, NCMN000, DI0CN0
+dels: SP+DA
+
+SPCMP a_més_del a_més_dels
+a: SPS00
+més: RG, NCMN000, DI0CN0
+dels: SP+DA
+
+SPCMP a_partir_del a_partir_dels
+a: SPS00
+partir: VMN00000
+dels: SP+DA
+
+SPCMP a_primers_del a_primers_dels
+a: SPS00
+primers: AO0MP0
+dels: SP+DA
+
+SPCMP a_través_del a_través_dels
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+dels: SP+DA
+
+SPCMP al_cap_del al_cap_dels
+al: SP+DA
+cap: SPS00
+dels: SP+DA
+
+SPCMP al_llarg_del al_llarg_dels
+al: SP+DA
+llarg: RG, NCMS000, AQ0MS0
+dels: SP+DA
+
+SPCMP al_marge_del al_marge_dels
+al: SP+DA
+marge: NCMS000
+dels: SP+DA
+
+SPCMP al_voltant_del al_voltant_dels
+al: SP+DA
+voltant: NCMS000, VMG00000
+dels: SP+DA
+
+SPCMP als_voltants_de als_voltants_de
+als: SP+DA
+voltants: NCMP000
+de: SPS00
+
+SPCMP amb_motiu_del amb_motiu_dels
+amb: SPS00
+motiu: NCMS000, AQ0MS0
+dels: SP+DA
+
+SPCMP arran_del arran_dels
+arran: RG, VMIP1S0B
+dels: SP+DA
+
+SPCMP cap_al cap_als
+cap: SPS00
+als: SP+DA
+
+SPCMP des_del des_del
+des: SPS00
+del: SP+DA
+
+SPCMP des_del des_dels
+des: SPS00
+dels: SP+DA
+
+SPCMP en_funció_del en_funció_dels
+en: SPS00
+funció: NCFS000
+dels: SP+DA
+
+SPCMP en_referència_al en_referència_als
+en: SPS00
+referència: NCFS000
+als: SP+DA
+
+SPCMP en_relació_al en_relació_als
+en: SPS00
+relació: NCFS000
+als: SP+DA
+
+SPCMP enfront_del enfront_dels
+enfront: NCMS000, VMIP1S0B
+dels: SP+DA
+
+SPCMP fins_als fins_als
+fins: SPS00
+als: SP+DA
+
+SPCMP gràcies_al gràcies_als
+gràcies: NCFP000
+als: SP+DA
+
+SPCMP pel_que_fa_al pel_que_fa_als
+pel: SP+DA
+que: PR0CN000, CS, RG
+fa: NCMS000, VMIP3S00
+als: SP+DA
+
+SPCMP per_al per_als
+per: SPS00
+als: SP+DA
+
+SPCMP per_obra_del per_obra_dels
+per: SPS00
+obra: VMM02S00, NCFS000, VMIP3S00
+dels: SP+DA
+
+SPCMP per_part_del per_part_dels
+per: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+dels: SP+DA
+
+SPCMP respecte_al respecte_al
+respecte: SPS00
+al: SP+DA
+
+SPCMP respecte_al respecte_als
+respecte: SPS00
+als: SP+DA
+
+SPCMS A_part_del a_part_del
+a: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+del: SP+DA
+
+SPCMS a_banda_del a_banda_del
+a: SPS00
+banda: NCFS000
+del: SP+DA
+
+SPCMS a_causa_del a_causa_del
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+del: SP+DA
+
+SPCMS a_càrrec_del a_càrrec_del
+a: SPS00
+càrrec: NCMS000
+del: SP+DA
+
+SPCMS a_diferència_del a_diferència_del
+a: SPS00
+diferència: NCFS000
+del: SP+DA
+
+SPCMS a_excepció_del a_excepció_del
+a: SPS00
+excepció: NCFS000
+del: SP+DA
+
+SPCMS a_favor_del a_favor_del
+a: SPS00
+favor: NCMS000
+del: SP+DA
+
+SPCMS a_instàncies_del a_instàncies_del
+a: SPS00
+instàncies: NCFP000
+del: SP+DA
+
+SPCMS a_l a_l
+a: SPS00
+l: DA0MS0, NCMN000
+
+SPCMS a_l'_entorn_del a_l'_entorn_del
+a: SPS00
+l': PP3CSA00, DA0CS0
+entorn: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPCMS a_mitjans_del a_mitjans_del
+a: SPS00
+mitjans: AQ0MP0, NCMP000
+del: SP+DA
+
+SPCMS a_més_a_més_del a_més_a_més_del
+a: SPS00
+més: RG, NCMN000, DI0CN0
+a: SPS00
+més: RG, NCMN000, DI0CN0
+del: SP+DA
+
+SPCMS a_més_del a_més_del
+a: SPS00
+més: RG, NCMN000, DI0CN0
+del: SP+DA
+
+SPCMS a_partir_del a_partir_del
+a: SPS00
+partir: VMN00000
+del: SP+DA
+
+SPCMS a_proposta_del a_proposta_del
+a: SPS00
+proposta: NCFS000
+del: SP+DA
+
+SPCMS a_suggeriment_del a_suggeriment_del
+a: SPS00
+suggeriment: NCMS000
+del: SP+DA
+
+SPCMS a_través_del a_través_del
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+del: SP+DA
+
+SPCMS al_cap_de al_cap_de
+al: SP+DA
+cap: SPS00
+de: SPS00
+
+SPCMS al_contrari al_contrari
+al: SP+DA
+contrari: NCMS000, AQ0MS0
+
+SPCMS al_llarg_del al_llarg_del
+al: SP+DA
+llarg: RG, NCMS000, AQ0MS0
+del: SP+DA
+
+SPCMS al_marge_de al_marge_de
+al: SP+DA
+marge: NCMS000
+de: SPS00
+
+SPCMS al_marge_del al_marge_del
+al: SP+DA
+marge: NCMS000
+del: SP+DA
+
+SPCMS al_marge_dels al_marge_dels
+al: SP+DA
+marge: NCMS000
+dels: SP+DA
+
+SPCMS al_mateix_temps al_mateix_temps
+al: SP+DA
+mateix: AQ0MS0, PI0MS000
+temps: NCMN000
+
+SPCMS al_voltant_de al_voltant_de
+al: SP+DA
+voltant: NCMS000, VMG00000
+de: SPS00
+
+SPCMS al_voltant_del al_voltant_del
+al: SP+DA
+voltant: NCMS000, VMG00000
+del: SP+DA
+
+SPCMS al_voltant_dels al_voltant_dels
+al: SP+DA
+voltant: NCMS000, VMG00000
+dels: SP+DA
+
+SPCMS amb_motiu_del amb_motiu_del
+amb: SPS00
+motiu: NCMS000, AQ0MS0
+del: SP+DA
+
+SPCMS arran_del arran_del
+arran: RG, VMIP1S0B
+del: SP+DA
+
+SPCMS cap_al cap_al
+cap: SPS00
+al: SP+DA
+
+SPCMS com_a_conseqüència_del com_a_conseqüència_del
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+a: SPS00
+conseqüència: NCFS000
+del: SP+DA
+
+SPCMS com_al com_al
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+al: SP+DA
+
+SPCMS contràriament_al contràriament_al
+contràriament: RG
+al: SP+DA
+
+SPCMS de_cara_al de_cara_al
+de: SPS00
+cara: NCFS000, AQ0FS0
+al: SP+DA
+
+SPCMS de_mans_del de_mans_del
+de: SPS00
+mans: NCFP000, AQ0MS0
+del: SP+DA
+
+SPCMS del_marc_de del_marc_de
+del: SP+DA
+marc: NCMS000, VMIP1S0B
+de: SPS00
+
+SPCMS des_del des_del
+des: SPS00
+del: SP+DA
+
+SPCMS en_al·lusió_al en_al·lusió_al
+en: SPS00
+al·lusió: NCFS000
+al: SP+DA
+
+SPCMS en_atenció_al en_atenció_al
+en: SPS00
+atenció: NCFS000, I
+al: SP+DA
+
+SPCMS en_base_al en_base_al
+en: SPS00
+base: NCFS000, NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+al: SP+DA
+
+SPCMS en_companyia_del en_companyia_del
+en: SPS00
+companyia: NCFS000
+del: SP+DA
+
+SPCMS en_comptes_del en_comptes_del
+en: SPS00
+comptes: VMIP2S00, NCMP000, VMSP2S0V
+del: SP+DA
+
+SPCMS en_contra_del en_contra_del
+en: SPS00
+contra: SPS00
+del: SP+DA
+
+SPCMS en_el_marc_del en_el_marc_del
+en: SPS00
+el: DA0MS0, PP3MSA00
+marc: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPCMS en_funció_del en_funció_del
+en: SPS00
+funció: NCFS000
+del: SP+DA
+
+SPCMS en_l'_àmbit_del en_l'_àmbit_del
+en: SPS00
+l': PP3CSA00, DA0CS0
+àmbit: NCMS000
+del: SP+DA
+
+SPCMS en_lloc_del en_lloc_del
+en: SPS00
+lloc: NCMS000
+del: SP+DA
+
+SPCMS en_mans_del en_mans_del
+en: SPS00
+mans: NCFP000, AQ0MS0
+del: SP+DA
+
+SPCMS en_motiu_del en_motiu_del
+en: SPS00
+motiu: NCMS000, AQ0MS0
+del: SP+DA
+
+SPCMS en_nom_del en_nom_del
+en: SPS00
+nom: VMIP1S0Z, NCMS000, VMIP3S00, VMM02S00
+del: SP+DA
+
+SPCMS enfront_del enfront_del
+enfront: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPCMS enmig_del enmig_del
+enmig: SPS00
+del: SP+DA
+
+SPCMS entorn_del entorn_del
+entorn: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPCMS fins_al fins_al
+fins: SPS00
+al: SP+DA
+
+SPCMS gràcies_al gràcies_al
+gràcies: NCFP000
+al: SP+DA
+
+SPCMS gràcies_al_fet gràcies_al_fet
+gràcies: NCFP000
+al: SP+DA
+fet: VMP00SM0, NCMS000
+
+SPCMS llevat_del llevat_del
+llevat: SPS00
+del: SP+DA
+
+SPCMS més_enllà_del més_enllà_del
+més: RG, NCMN000, DI0CN0
+enllà: RG
+del: SP+DA
+
+SPCMS pel_que_fa pel_que_fa
+pel: SP+DA
+que: PR0CN000, CS, RG
+fa: NCMS000, VMIP3S00
+
+SPCMS pel_que_fa_al pel_que_fa_al
+pel: SP+DA
+que: PR0CN000, CS, RG
+fa: NCMS000, VMIP3S00
+al: SP+DA
+
+SPCMS pel_que_respecta_a pel_que_respecta_a
+pel: SP+DA
+que: PR0CN000, CS, RG
+respecta: VMIP3S00, VMM02S00
+a: SPS00
+
+SPCMS pels_voltants_del pels_voltants_del
+pels: SP+DA
+voltants: NCMP000
+del: SP+DA
+
+SPCMS per_mitjà_del per_mitjà_del
+per: SPS00
+mitjà: NCMS000, AQ0MS0
+del: SP+DA
+
+SPCMS per_part_del per_part_del
+per: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+del: SP+DA
+
+SPCMS prop_del prop_del
+prop: SPS00
+del: SP+DA
+
+SPCMS respecte_al respecte_al
+respecte: SPS00
+al: SP+DA
+
+SPCMS respecte_del respecte_del
+respecte: SPS00
+del: SP+DA
+
+SPCMS respecte_el respecte_el
+respecte: SPS00
+el: DA0MS0, PP3MSA00
+
+SPCMS voltant_al_de voltant_al_d'
+voltant: NCMS000, VMG00000
+al: SP+DA
+d': SPS00
+
+SPS00 a_banda_de a_banda_d'
+a: SPS00
+banda: NCFS000
+d': SPS00
+
+SPS00 a_banda_de a_banda_de
+a: SPS00
+banda: NCFS000
+de: SPS00
+
+SPS00 a_base_de a_base_de
+a: SPS00
+base: NCFS000, NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+de: SPS00
+
+SPS00 a_canvi_de a_canvi_de
+a: SPS00
+canvi: NCMS000
+de: SPS00
+
+SPS00 a_canvi_del a_canvi_del
+a: SPS00
+canvi: NCMS000
+del: SP+DA
+
+SPS00 a_causa a_causa
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+
+SPS00 a_causa_de a_causa_d'
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 a_causa_de a_causa_de
+a: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+de: SPS00
+
+SPS00 a_conseqüència_de a_conseqüència_de
+a: SPS00
+conseqüència: NCFS000
+de: SPS00
+
+SPS00 a_cop_de a_cop_de
+a: SPS00
+cop: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 a_costa_de a_costa_d'
+a: SPS00
+costa: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 a_càrrec_de a_càrrec_d'
+a: SPS00
+càrrec: NCMS000
+d': SPS00
+
+SPS00 a_càrrec_de a_càrrec_de
+a: SPS00
+càrrec: NCMS000
+de: SPS00
+
+SPS00 a_càrrec_del a_càrrec_del
+a: SPS00
+càrrec: NCMS000
+del: SP+DA
+
+SPS00 a_diferència_de a_diferència_de
+a: SPS00
+diferència: NCFS000
+de: SPS00
+
+SPS00 a_excepció_dels a_excepció_dels
+a: SPS00
+excepció: NCFS000
+dels: SP+DA
+
+SPS00 a_falta_de a_falta_d'
+a: SPS00
+falta: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 a_falta_de a_falta_de
+a: SPS00
+falta: VMM02S00, NCFS000, VMIP3S00
+de: SPS00
+
+SPS00 a_favor_de a_favor_d'
+a: SPS00
+favor: NCMS000
+d': SPS00
+
+SPS00 a_favor_de a_favor_de
+a: SPS00
+favor: NCMS000
+de: SPS00
+
+SPS00 a_fi_de a_fi_d'
+a: SPS00
+fi: NCCS000, AQ0MS0, NCFS000
+d': SPS00
+
+SPS00 a_fi_de a_fi_de
+a: SPS00
+fi: NCCS000, AQ0MS0, NCFS000
+de: SPS00
+
+SPS00 a_l'_entorn_de a_l'_entorn_de
+a: SPS00
+l': PP3CSA00, DA0CS0
+entorn: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 a_l'_hora_de a_l'_hora_d'
+a: SPS00
+l': PP3CSA00, DA0CS0
+hora: NCFS000
+d': SPS00
+
+SPS00 a_l'_igual_que a_l'_igual_que
+a: SPS00
+l': PP3CSA00, DA0CS0
+igual: RG, NCCS000, AQ0CS0, VMIP1S0B
+que: PR0CN000, CS, RG
+
+SPS00 a_l'_ombra_de a_l'_ombra_d'
+a: SPS00
+l': PP3CSA00, DA0CS0
+ombra: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 a_mercè_de a_mercè_de
+a: SPS00
+mercè: NCFS000
+de: SPS00
+
+SPS00 a_mitjan_de a_mitjan_de
+a: SPS00
+mitjan: AQ0CN0, VMIP1S0B
+de: SPS00
+
+SPS00 a_més a_més
+a: SPS00
+més: RG, NCMN000, DI0CN0
+
+SPS00 a_més_a_més a_més_a_més
+a: SPS00
+més: RG, NCMN000, DI0CN0
+a: SPS00
+més: RG, NCMN000, DI0CN0
+
+SPS00 a_més_a_més_de a_més_a_més_d'
+a: SPS00
+més: RG, NCMN000, DI0CN0
+a: SPS00
+més: RG, NCMN000, DI0CN0
+d': SPS00
+
+SPS00 a_més_a_més_de a_més_a_més_de
+a: SPS00
+més: RG, NCMN000, DI0CN0
+a: SPS00
+més: RG, NCMN000, DI0CN0
+de: SPS00
+
+SPS00 a_més_de a_més_d'
+a: SPS00
+més: RG, NCMN000, DI0CN0
+d': SPS00
+
+SPS00 a_més_de a_més_de
+a: SPS00
+més: RG, NCMN000, DI0CN0
+de: SPS00
+
+SPS00 a_més_del a_més_del
+a: SPS00
+més: RG, NCMN000, DI0CN0
+del: SP+DA
+
+SPS00 a_part_de a_part_d'
+a: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+d': SPS00
+
+SPS00 a_part_de a_part_de
+a: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+de: SPS00
+
+SPS00 a_partir_de a_partir_d'
+a: SPS00
+partir: VMN00000
+d': SPS00
+
+SPS00 a_partir_de a_partir_de
+a: SPS00
+partir: VMN00000
+de: SPS00
+
+SPS00 a_pesar_de a_pesar_d'
+a: SPS00
+pesar: NCMS000, VMN00000
+d': SPS00
+
+SPS00 a_pesar_de a_pesar_de
+a: SPS00
+pesar: NCMS000, VMN00000
+de: SPS00
+
+SPS00 a_petició_de a_petició_d'
+a: SPS00
+petició: NCFS000
+d': SPS00
+
+SPS00 a_petició_de a_petició_de
+a: SPS00
+petició: NCFS000
+de: SPS00
+
+SPS00 a_punt_de a_punt_d'
+a: SPS00
+punt: NCMS000, VMIP1S0B
+d': SPS00
+
+SPS00 a_punt_de a_punt_de
+a: SPS00
+punt: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 a_raó_de a_raó_d'
+a: SPS00
+raó: NCFS000
+d': SPS00
+
+SPS00 a_raó_de a_raó_de
+a: SPS00
+raó: NCFS000
+de: SPS00
+
+SPS00 a_tall_de a_tall_de
+a: SPS00
+tall: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 a_través_d_' a_través_d_'
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+d: 
+': F
+
+SPS00 a_través_de a_través_d'
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+d': SPS00
+
+SPS00 a_través_de a_través_de
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+de: SPS00
+
+SPS00 a_través_dels a_través_dels
+a: SPS00
+través: NCMS000, VMSI3S01, VMSI1S01
+dels: SP+DA
+
+SPS00 al_cap_de al_cap_de
+al: SP+DA
+cap: SPS00
+de: SPS00
+
+SPS00 al_capdavant_de al_capdavant_de
+al: SP+DA
+capdavant: NCMS000
+de: SPS00
+
+SPS00 al_llarg_de al_llarg_d'
+al: SP+DA
+llarg: RG, NCMS000, AQ0MS0
+d': SPS00
+
+SPS00 al_llarg_de al_llarg_de
+al: SP+DA
+llarg: RG, NCMS000, AQ0MS0
+de: SPS00
+
+SPS00 al_marge_de al_marge_d'
+al: SP+DA
+marge: NCMS000
+d': SPS00
+
+SPS00 al_marge_de al_marge_de
+al: SP+DA
+marge: NCMS000
+de: SPS00
+
+SPS00 al_voltant_de al_voltant_d'
+al: SP+DA
+voltant: NCMS000, VMG00000
+d': SPS00
+
+SPS00 al_voltant_de al_voltant_de
+al: SP+DA
+voltant: NCMS000, VMG00000
+de: SPS00
+
+SPS00 amb_l'_objecte_de amb_l'_objecte_de
+amb: SPS00
+l': PP3CSA00, DA0CS0
+objecte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+de: SPS00
+
+SPS00 amb_l'_objectiu amb_l'_objectiu
+amb: SPS00
+l': PP3CSA00, DA0CS0
+objectiu: NCMS000, AQ0MS0
+
+SPS00 amb_l'_objectiu_de amb_l'_objectiu_d'
+amb: SPS00
+l': PP3CSA00, DA0CS0
+objectiu: NCMS000, AQ0MS0
+d': SPS00
+
+SPS00 amb_l'_objectiu_de amb_l'_objectiu_de
+amb: SPS00
+l': PP3CSA00, DA0CS0
+objectiu: NCMS000, AQ0MS0
+de: SPS00
+
+SPS00 amb_la_col·laboració_de amb_la_col·laboració_de
+amb: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+col·laboració: NCFS000
+de: SPS00
+
+SPS00 amb_la_finalitat_de amb_la_finalitat_de
+amb: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+finalitat: NCFS000
+de: SPS00
+
+SPS00 amb_la_intenció_de amb_la_intenció_d'
+amb: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+intenció: NCFS000
+d': SPS00
+
+SPS00 amb_la_intenció_de amb_la_intenció_de
+amb: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+intenció: NCFS000
+de: SPS00
+
+SPS00 amb_motiu_de amb_motiu_d'
+amb: SPS00
+motiu: NCMS000, AQ0MS0
+d': SPS00
+
+SPS00 amb_motiu_de amb_motiu_de
+amb: SPS00
+motiu: NCMS000, AQ0MS0
+de: SPS00
+
+SPS00 arran_de arran_d'
+arran: RG, VMIP1S0B
+d': SPS00
+
+SPS00 arran_de arran_de
+arran: RG, VMIP1S0B
+de: SPS00
+
+SPS00 cap_a cap_a
+cap: SPS00
+a: SPS00
+
+SPS00 cap_al cap_al
+cap: SPS00
+al: SP+DA
+
+SPS00 cara_a cara_a
+cara: NCFS000, AQ0FS0
+a: SPS00
+
+SPS00 com_a com_a
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+a: SPS00
+
+SPS00 com_a_conseqüència com_a_conseqüència
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+a: SPS00
+conseqüència: NCFS000
+
+SPS00 com_a_conseqüència_de com_a_conseqüència_d'
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+a: SPS00
+conseqüència: NCFS000
+d': SPS00
+
+SPS00 com_a_conseqüència_de com_a_conseqüència_de
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+a: SPS00
+conseqüència: NCFS000
+de: SPS00
+
+SPS00 com_ara com_ara
+com: PT000000, RG, NCMS000, PR000000, CS, VMIP1S0B
+ara: RG, CC, NCFS000
+
+SPS00 conjuntament_amb conjuntament_amb
+conjuntament: RG
+amb: SPS00
+
+SPS00 d'_acord d'_acord
+d': SPS00
+acord: NCMS000, VMIP1S0B
+
+SPS00 d'_acord_amb d'_acord_amb
+d': SPS00
+acord: NCMS000, VMIP1S0B
+amb: SPS00
+
+SPS00 d_' d_'
+d: 
+': F
+
+SPS00 darrere_de darrere_d'
+darrere: SPS00
+d': SPS00
+
+SPS00 de_acord d'_acord
+d': SPS00
+acord: NCMS000, VMIP1S0B
+
+SPS00 de_cara_a de_cara_a
+de: SPS00
+cara: NCFS000, AQ0FS0
+a: SPS00
+
+SPS00 de_cara_al de_cara_al
+de: SPS00
+cara: NCFS000, AQ0FS0
+al: SP+DA
+
+SPS00 de_la_mà_de de_la_mà_de
+de: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+mà: NCFS000
+de: SPS00
+
+SPS00 degut_a degut_a
+degut: VMP00SM0
+a: SPS00
+
+SPS00 des_de des_d'
+des: SPS00
+d': SPS00
+
+SPS00 des_de des_de
+des: SPS00
+de: SPS00
+
+SPS00 des_del des_del
+des: SPS00
+del: SP+DA
+
+SPS00 després_de després_de
+després: VMP00SM0, RG
+de: SPS00
+
+SPS00 en_al·lusió_als en_al·lusió_als
+en: SPS00
+al·lusió: NCFS000
+als: SP+DA
+
+SPS00 en_atenció_a en_atenció_a
+en: SPS00
+atenció: NCFS000, I
+a: SPS00
+
+SPS00 en_base_a en_base_a
+en: SPS00
+base: NCFS000, NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+a: SPS00
+
+SPS00 en_cas_de en_cas_d'
+en: SPS00
+cas: NCMS000, NCFP000, VMIP1S0B
+d': SPS00
+
+SPS00 en_cas_de en_cas_de
+en: SPS00
+cas: NCMS000, NCFP000, VMIP1S0B
+de: SPS00
+
+SPS00 en_col·laboració_amb en_col·laboració_amb
+en: SPS00
+col·laboració: NCFS000
+amb: SPS00
+
+SPS00 en_companyia_de en_companyia_de
+en: SPS00
+companyia: NCFS000
+de: SPS00
+
+SPS00 en_comparació_a en_comparació_a
+en: SPS00
+comparació: NCFS000
+a: SPS00
+
+SPS00 en_comptes_de en_comptes_d'
+en: SPS00
+comptes: VMIP2S00, NCMP000, VMSP2S0V
+d': SPS00
+
+SPS00 en_comptes_de en_comptes_de
+en: SPS00
+comptes: VMIP2S00, NCMP000, VMSP2S0V
+de: SPS00
+
+SPS00 en_concepte_de en_concepte_d'
+en: SPS00
+concepte: NCMS000
+d': SPS00
+
+SPS00 en_confluència_amb en_confluència_amb
+en: SPS00
+confluència: NCFS000
+amb: SPS00
+
+SPS00 en_consonància_amb en_consonància_amb
+en: SPS00
+consonància: NCFS000
+amb: SPS00
+
+SPS00 en_contra en_contra
+en: SPS00
+contra: SPS00
+
+SPS00 en_contra_de en_contra_de
+en: SPS00
+contra: SPS00
+de: SPS00
+
+SPS00 en_coordinació_amb en_coordinació_amb
+en: SPS00
+coordinació: NCFS000
+amb: SPS00
+
+SPS00 en_direcció_a en_direcció_a
+en: SPS00
+direcció: NCFS000
+a: SPS00
+
+SPS00 en_el_camp_de en_el_camp_de
+en: SPS00
+el: DA0MS0, PP3MSA00
+camp: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 en_el_cas_de en_el_cas_de
+en: SPS00
+el: DA0MS0, PP3MSA00
+cas: NCMS000, NCFP000, VMIP1S0B
+de: SPS00
+
+SPS00 en_el_marc_de en_el_marc_d'
+en: SPS00
+el: DA0MS0, PP3MSA00
+marc: NCMS000, VMIP1S0B
+d': SPS00
+
+SPS00 en_el_marc_de en_el_marc_de
+en: SPS00
+el: DA0MS0, PP3MSA00
+marc: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 en_el_marc_del en_el_marc_del
+en: SPS00
+el: DA0MS0, PP3MSA00
+marc: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPS00 en_favor_de en_favor_de
+en: SPS00
+favor: NCMS000
+de: SPS00
+
+SPS00 en_funció_de en_funció_d'
+en: SPS00
+funció: NCFS000
+d': SPS00
+
+SPS00 en_funció_de en_funció_de
+en: SPS00
+funció: NCFS000
+de: SPS00
+
+SPS00 en_funció_del en_funció_del
+en: SPS00
+funció: NCFS000
+del: SP+DA
+
+SPS00 en_honor_de en_honor_de
+en: SPS00
+honor: NCCS000, VMIP1S0B
+de: SPS00
+
+SPS00 en_lloc_de en_lloc_d'
+en: SPS00
+lloc: NCMS000
+d': SPS00
+
+SPS00 en_lloc_de en_lloc_de
+en: SPS00
+lloc: NCMS000
+de: SPS00
+
+SPS00 en_mans_de en_mans_d'
+en: SPS00
+mans: NCFP000, AQ0MS0
+d': SPS00
+
+SPS00 en_mans_del en_mans_del
+en: SPS00
+mans: NCFP000, AQ0MS0
+del: SP+DA
+
+SPS00 en_matèria_de en_matèria_d'
+en: SPS00
+matèria: NCFS000
+d': SPS00
+
+SPS00 en_matèria_de en_matèria_de
+en: SPS00
+matèria: NCFS000
+de: SPS00
+
+SPS00 en_memòria_de en_memòria_de
+en: SPS00
+memòria: NCFS000
+de: SPS00
+
+SPS00 en_menys_de en_menys_d'
+en: SPS00
+menys: SPS00
+d': SPS00
+
+SPS00 en_motiu_de en_motiu_de
+en: SPS00
+motiu: NCMS000, AQ0MS0
+de: SPS00
+
+SPS00 en_nom_de en_nom_d'
+en: SPS00
+nom: VMIP1S0Z, NCMS000, VMIP3S00, VMM02S00
+d': SPS00
+
+SPS00 en_nom_de en_nom_de
+en: SPS00
+nom: VMIP1S0Z, NCMS000, VMIP3S00, VMM02S00
+de: SPS00
+
+SPS00 en_ocasió_de en_ocasió_de
+en: SPS00
+ocasió: NCFS000
+de: SPS00
+
+SPS00 en_qualitat_de en_qualitat_d'
+en: SPS00
+qualitat: NCFS000
+d': SPS00
+
+SPS00 en_qüestió_de en_qüestió_de
+en: SPS00
+qüestió: NCFS000
+de: SPS00
+
+SPS00 en_referència_a en_referència_a
+en: SPS00
+referència: NCFS000
+a: SPS00
+
+SPS00 en_referència_al en_referència_al
+en: SPS00
+referència: NCFS000
+al: SP+DA
+
+SPS00 en_relació_a en_relació_a
+en: SPS00
+relació: NCFS000
+a: SPS00
+
+SPS00 en_relació_amb en_relació_amb
+en: SPS00
+relació: NCFS000
+amb: SPS00
+
+SPS00 en_resposta_a en_resposta_a
+en: SPS00
+resposta: VMP00SF0, NCFS000
+a: SPS00
+
+SPS00 en_solidaritat_amb en_solidaritat_amb
+en: SPS00
+solidaritat: NCFS000
+amb: SPS00
+
+SPS00 en_tant_que en_tant_que
+en: SPS00
+tant: RG, DI0MS0, NCMS000, PI0MS000
+que: PR0CN000, CS, RG
+
+SPS00 en_virtut_de en_virtut_d'
+en: SPS00
+virtut: NCFS000
+d': SPS00
+
+SPS00 en_vista_de en_vista_de
+en: SPS00
+vista: VMP00SF0, NCFS000, VMM03S0V, VMSP3S0V, VMSP1S0V
+de: SPS00
+
+SPS00 enfront_de enfront_de
+enfront: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 enfront_dels enfront_dels
+enfront: NCMS000, VMIP1S0B
+dels: SP+DA
+
+SPS00 enmig_de enmig_d'
+enmig: SPS00
+d': SPS00
+
+SPS00 enmig_de enmig_de
+enmig: SPS00
+de: SPS00
+
+SPS00 entorn_de entorn_d'
+entorn: NCMS000, VMIP1S0B
+d': SPS00
+
+SPS00 entorn_de entorn_de
+entorn: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 entorn_del entorn_del
+entorn: NCMS000, VMIP1S0B
+del: SP+DA
+
+SPS00 fins_a fins_a
+fins: SPS00
+a: SPS00
+
+SPS00 fins_al fins_al
+fins: SPS00
+al: SP+DA
+
+SPS00 fora_de fora_d'
+fora: VSSI3S03, RG, VSIC3S00, VSSI1S03, VSIC1S00
+d': SPS00
+
+SPS00 fruit_de fruit_d'
+fruit: NCMS000, VMIP1S0B
+d': SPS00
+
+SPS00 fruit_de fruit_de
+fruit: NCMS000, VMIP1S0B
+de: SPS00
+
+SPS00 gràcies_a gràcies_a
+gràcies: NCFP000
+a: SPS00
+
+SPS00 juntament_amb juntament_amb
+juntament: RG
+amb: SPS00
+
+SPS00 llevat_de llevat_de
+llevat: SPS00
+de: SPS00
+
+SPS00 lluny_de lluny_d'
+lluny: RG, AQ0MS0
+d': SPS00
+
+SPS00 mercès_a mercès_a
+mercès: NCFP000
+a: SPS00
+
+SPS00 més_enllà_de més_enllà_de
+més: RG, NCMN000, DI0CN0
+enllà: RG
+de: SPS00
+
+SPS00 més_enllà_del més_enllà_del
+més: RG, NCMN000, DI0CN0
+enllà: RG
+del: SP+DA
+
+SPS00 no_obstant no_obstant
+no: NCMS000, RN
+obstant: VMG00000
+
+SPS00 passant_pel passant_pel
+passant: NCCS000, AQ0CS0, VMG00000
+pel: SP+DA
+
+SPS00 passant_per passant_per
+passant: NCCS000, AQ0CS0, VMG00000
+per: SPS00
+
+SPS00 pel_que_fa_a pel_que_fa_a
+pel: SP+DA
+que: PR0CN000, CS, RG
+fa: NCMS000, VMIP3S00
+a: SPS00
+
+SPS00 pel_que_fa_al pel_que_fa_al
+pel: SP+DA
+que: PR0CN000, CS, RG
+fa: NCMS000, VMIP3S00
+al: SP+DA
+
+SPS00 pels_volts_de pels_volts_d'
+pels: SP+DA
+volts: NCMP000
+d': SPS00
+
+SPS00 pels_volts_de pels_volts_de
+pels: SP+DA
+volts: NCMP000
+de: SPS00
+
+SPS00 per_boca_del per_boca_del
+per: SPS00
+boca: NCFS000
+del: SP+DA
+
+SPS00 per_causa_de per_causa_d'
+per: SPS00
+causa: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 per_compte_de per_compte_de
+per: SPS00
+compte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+de: SPS00
+
+SPS00 per_culpa_de per_culpa_d'
+per: SPS00
+culpa: VMM02S00, NCFS000, VMIP3S00
+d': SPS00
+
+SPS00 per_culpa_de per_culpa_de
+per: SPS00
+culpa: VMM02S00, NCFS000, VMIP3S00
+de: SPS00
+
+SPS00 per_la_seva_part per_la_seva_part
+per: SPS00
+la: PP3FSA00, DA0FS0, NCMS000
+seva: DP3FS0C0, AP3FS0C0, PX3FS0C0
+part: NCMS000, AQ0MS0, NCFS000
+
+SPS00 per_mitjà_de per_mitjà_d'
+per: SPS00
+mitjà: NCMS000, AQ0MS0
+d': SPS00
+
+SPS00 per_mitjà_de per_mitjà_de
+per: SPS00
+mitjà: NCMS000, AQ0MS0
+de: SPS00
+
+SPS00 per_part_de per_part_d'
+per: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+d': SPS00
+
+SPS00 per_part_de per_part_de
+per: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+de: SPS00
+
+SPS00 per_part_del per_part_del
+per: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+del: SP+DA
+
+SPS00 per_sota_de per_sota_de
+per: SPS00
+sota: SPS00
+de: SPS00
+
+SPS00 per_tal_de per_tal_d'
+per: SPS00
+tal: DD0CS0, PD0CS000, RG, VMIP1S0B
+d': SPS00
+
+SPS00 per_tal_de per_tal_de
+per: SPS00
+tal: DD0CS0, PD0CS000, RG, VMIP1S0B
+de: SPS00
+
+SPS00 per_tant per_tant
+per: SPS00
+tant: RG, DI0MS0, NCMS000, PI0MS000
+
+SPS00 prop_de prop_d'
+prop: SPS00
+d': SPS00
+
+SPS00 prop_de prop_de
+prop: SPS00
+de: SPS00
+
+SPS00 quant_a quant_a
+quant: DT0MS0, RG, PT0MS000, DI0MS0, PI0MS000
+a: SPS00
+
+SPS00 referent_al referent_al
+referent: NCMS000, AQ0CS0
+al: SP+DA
+
+SPS00 respecte_a respecte_a
+respecte: SPS00
+a: SPS00
+
+SPS00 respecte_al respecte_al
+respecte: SPS00
+al: SP+DA
+
+SPS00 respecte_als respecte_als
+respecte: SPS00
+als: SP+DA
+
+SPS00 respecte_de respecte_d'
+respecte: SPS00
+d': SPS00
+
+SPS00 respecte_de respecte_de
+respecte: SPS00
+de: SPS00
+
+SPS00 respecte_del respecte_del
+respecte: SPS00
+del: SP+DA
+
+SPS00 tot_i tot_i
+tot: RG, DI0MS0, NCMS000, PI0MS000
+i: CC, NCFS000
+
+SPS00 tot_i_això tot_i_això
+tot: RG, DI0MS0, NCMS000, PI0MS000
+i: CC, NCFS000
+això: PD0NS000
+
+SPS00 tret_de tret_d'
+tret: SPS00
+d': SPS00
+
+SPS00 tret_de tret_de
+tret: SPS00
+de: SPS00
+

@@ -1,0 +1,932 @@
+RG a_banda_i_banda a_banda_i_banda
+a: SPS00
+banda: NCFS000
+i: CC
+banda: NCFS000
+
+RG a_bord a_bord
+a: SPS00
+bord: NCMS000
+
+RG a_cappella a_cappella
+a: SPS00
+cappella: 
+
+RG a_cavall a_cavall
+a: SPS00
+cavall: NCMS000
+
+RG a_continuació a_continuació
+a: SPS00
+continuació: NCFS000
+
+RG a_corre_cuita a_corre_cuita
+a: SPS00
+corre: VMM02S00
+cuita: VMM02S00
+
+RG a_favor a_favor
+a: SPS00
+favor: NCMS000
+
+RG a_fons a_fons
+a: SPS00
+fons: NCMN000
+
+RG a_granel a_granel
+a: SPS00
+granel: 
+
+RG a_grans_trets a_grans_trets
+a: SPS00
+grans: AQ0CP0
+trets: NCMP000
+
+RG a_hores_de_ara a_hores_d'_ara
+a: SPS00
+hores: NCFP000
+d': SPS00
+ara: RG
+
+RG a_l'_alça a_l'_alça
+a: SPS00
+l': DA0CS0
+alça: NCFS000
+
+RG a_l'_inrevés a_l'_inrevés
+a: SPS00
+l': PP3CSA00
+inrevés: NCMS000
+
+RG a_la_perfecció a_la_perfecció
+a: SPS00
+la: DA0FS0
+perfecció: NCFS000
+
+RG a_la_vegada a_la_vegada
+a: SPS00
+la: DA0FS0
+vegada: NCFS000
+
+RG a_mitges a_mitges
+a: SPS00
+mitges: AQ0FP0
+
+RG a_més a_més
+a: SPS00
+més: RG
+
+RG a_més_a_més a_més_a_més
+a: SPS00
+més: RG
+a: SPS00
+més: RG
+
+RG a_penes a_penes
+a: SPS00
+penes: NCFP000
+
+RG a_poc_a_poc a_poc_a_poc
+a: SPS00
+poc: RG
+a: SPS00
+poc: RG
+
+RG a_posteriori a_posteriori
+a: SPS00
+posteriori: 
+
+RG a_prop a_prop
+a: SPS00
+prop: RG
+
+RG a_punt a_punt
+a: SPS00
+punt: NCMS000
+
+RG a_sobre a_sobre
+a: SPS00
+sobre: RG
+
+RG a_soles a_soles
+a: SPS00
+soles: NCFP000
+
+RG a_temps a_temps
+a: SPS00
+temps: NCMN000
+
+RG a_tort_i_a_dret a_tort_i_a_dret
+a: SPS00
+tort: AQ0MS0
+i: CC
+a: SPS00
+dret: AQ0MS0
+
+RG a_ull a_ull
+a: SPS00
+ull: NCMS000
+
+RG a_ultrança a_ultrança
+a: SPS00
+ultrança: 
+
+RG a_vegades a_vegades
+a: SPS00
+vegades: NCFP000
+
+RG abans_que_res abans_que_res
+abans: RG
+que: RG
+res: PI0CS000
+
+RG així_com així_com
+així: RG
+com: RG
+
+RG així_doncs així_doncs
+així: RG
+doncs: RG
+
+RG així_mateix així_mateix
+així: RG
+mateix: AQ0MS0
+
+RG això_sí això_sí
+això: PD0NS000
+sí: RG
+
+RG al_cap_i_a_la_fi al_cap_i_a_la_fi
+al: SP+DA
+cap: NCCS000
+i: CC
+a: SPS00
+la: DA0FS0
+fi: NCCS000
+
+RG al_capdavall al_capdavall
+al: SP+D
+capdavall: NCMS000
+
+RG al_capdavant al_capdavant
+al: SP+D
+capdavant: NCMS000
+
+RG al_contrari al_contrari
+al: SP+D
+contrari: NCMS000, AQ0MS0
+
+RG al_descobert al_descobert
+al: SP+DA
+descobert: AQ0MS0
+
+RG al_final al_final
+al: SP+DA
+final: NCCS000
+
+RG al_mateix_temps al_mateix_temps
+al: SP+DA
+mateix: AQ0MS0
+temps: NCMN000
+
+RG al_seu_torn al_seu_torn
+al: SP+DA
+seu: DP3MS0C0
+torn: NCMS000
+
+RG al_voltant al_voltant
+al: SP+DA
+voltant: NCMS000
+
+RG altra_que altra_que
+altra: PI0FS000
+que: RG
+
+RG amb_independència_de amb_independència_de
+amb: SPS00
+independència: NCFS000
+de: SPS00
+
+RG amb_prou_feines amb_prou_feines
+amb: SPS00
+prou: RG
+feines: NCFP000
+
+RG amb_tot amb_tot
+amb: SPS00
+tot: RG
+
+RG ara_bé ara_bé
+ara: RG
+bé: RG
+
+RG ara_com_ara ara_com_ara
+ara: RG
+com: RG
+ara: RG
+
+RG ara_per_ara ara_per_ara
+ara: RG
+per: SPS00
+ara: RG
+
+RG avui_dia avui_dia
+avui: RG
+dia: NCMS000
+
+RG avui_en_dia avui_en_dia
+avui: RG
+en: SPS00
+dia: NCMS000
+
+RG ben_bé ben_bé
+ben: RG
+bé: RG
+
+RG cada_dos_per_tres cada_dos_per_tres
+cada: DI0CS0
+dos: DN0MP0
+per: SPS00
+tres: DN0CP0
+
+RG cap_altre_que cap_altre_que
+cap: DI0CS0
+altre: PI0MS000
+que: RG
+
+RG com_a_màxim com_a_màxim
+com: RG
+a: SPS00
+màxim: AQ0MS0
+
+RG com_a_mínim com_a_mínim
+com: RG
+a: SPS00
+mínim: AQ0MS0
+
+RG com_més_aviat_millor com_més_aviat_millor
+com: RG
+més: RG
+aviat: RG
+millor: RG
+
+RG com_si_res com_si_res
+com: RG
+si: CS
+res: PI0CS000
+
+RG contra_natura contra_natura
+contra: SPS00
+natura: NCFS000
+
+RG d'_acord d'_acord
+d': SPS00
+acord: NCMS000
+
+RG d'_aleshores_ençà d'_aleshores_ençà
+d': SPS00
+aleshores: RG
+ençà: RG
+
+RG d'_allò_més d'_allò_més
+d': SPS00
+allò: PD0NS000
+més: RG
+
+RG d'_ara_endavant d'_ara_endavant
+d': SPS00
+ara: RG
+endavant: RG
+
+RG d'_entrada d'_entrada
+d': SPS00
+entrada: NCFS000
+
+RG d'_hora d'_hora
+d': SPS00
+hora: NCFS000
+
+RG d'_immediat d'_immediat
+d': SPS00
+immediat: AQ0MS0
+
+RG d'_un_dia_a_l'_altre d'_un_dia_a_l'_altre
+d': SPS00
+un: DI0MS0
+dia: NCMS000
+a: SPS00
+l': DA0CS0
+altre: AQ0MS0
+
+RG d'_un_temps_ençà d'_un_temps_ençà
+d': SPS00
+un: DI0MS0
+temps: NCMN000
+ençà: RG
+
+RG d'_una_manera_especial d'_una_manera_especial
+d': SPS00
+una: DI0FS0
+manera: NCFS000
+especial: AQ0CS0
+
+RG d'_urgència d'_urgència
+d': SPS00
+urgència: NCFS000
+
+RG d'_època d'_època
+d': SPS00
+època: NCFS000
+
+RG de_bell_antuvi de_bell_antuvi
+de: SPS00
+bell: AQ0MS0
+antuvi: 
+
+RG de_ben_segur de_ben_segur
+de: SPS00
+ben: RG
+segur: AQ0MS0
+
+RG de_boca_en_boca de_boca_en_boca
+de: SPS00
+boca: NCFS000
+en: SPS00
+boca: NCFS000
+
+RG de_butxaca de_butxaca
+de: SPS00
+butxaca: NCFS000
+
+RG de_cop de_cop
+de: SPS00
+cop: NCMS000
+
+RG de_cop_i_volta de_cop_i_volta
+de: SPS00
+cop: NCMS000
+i: CC
+volta: NCFS000
+
+RG de_debò de_debò
+de: SPS00
+debò: 
+
+RG de_fet de_fet
+de: SPS00
+fet: NCMS000
+
+RG de_genolls de_genolls
+de: SPS00
+genolls: NCMP000
+
+RG de_la_mateixa_manera de_la_mateixa_manera
+de: SPS00
+la: DA0FS0
+mateixa: AQ0FS0
+manera: NCFS000
+
+RG de_llarg de_llarg
+de: SPS00
+llarg: AQ0MS0
+
+RG de_mica_en_mica de_mica_en_mica
+de: SPS00
+mica: NCFS000
+en: SPS00
+mica: NCFS000
+
+RG de_moment de_moment
+de: SPS00
+moment: NCMS000
+
+RG de_nou de_nou
+de: SPS00
+nou: NCFS000, NCMS000, NCCN000, DN0CP0, VMM02S00, AQ0MS0, VMIP3S00
+
+RG de_prop de_prop
+de: SPS00
+prop: RG
+
+RG de_seguida de_seguida
+de: SPS00
+seguida: VMP00SF0, NCFS000, AQ0FS0
+
+RG de_segur de_segur
+de: SPS00
+segur: AQ0MS0
+
+RG de_sobres de_sobres
+de: SPS00
+sobres: VMIP2S00, NCFP000, NCMP000, VMSP2S0V
+
+RG de_sobte de_sobte
+de: SPS00
+sobte: VMM03S0V, VMSP1S0V, VMSP3S0V, VMIP1S0V
+
+RG de_tant_en_tant de_tant_en_tant
+de: SPS00
+tant: RG
+en: SPS00
+tant: RG
+
+RG de_tota_manera de_tota_manera
+de: SPS00
+tota: DI0FS0, PI0FS000
+manera: NCFS000, AQ0FS0
+
+RG de_totes_maneres de_totes_maneres
+de: SPS00
+totes: DI0FP0, PI0FP000
+maneres: NCFP000, AQ0FP0
+
+RG de_tu_a_tu de_tu_a_tu
+de: SPS00
+tu: PP2CSN00
+a: SPS00
+tu: PP2CSN00
+
+RG de_vegades de_vegades
+de: SPS00
+vegades: NCFP000
+
+RG del_tot del_tot
+del: SP+DA
+tot: RG
+
+RG demà_passat demà_passat
+demà: RG
+passat: RG
+
+RG dia_a_dia dia_a_dia
+dia: NCMS000
+a: SPS00
+dia: NCMS000
+
+RG en_absolut en_absolut
+en: SPS00
+absolut: AQ0MS0
+
+RG en_acabat en_acabat
+en: SPS00
+acabat: RG
+
+RG en_canvi en_canvi
+en: SPS00
+canvi: NCMS000
+
+RG en_cas_contrari en_cas_contrari
+en: SPS00
+cas: NCMS000, NCFP000, VMIP1S0B
+contrari: NCMS000, AQ0MS0
+
+RG en_comú en_comú
+en: SPS00
+comú: NCMS000, AQ0MS0
+
+RG en_concret en_concret
+en: SPS00
+concret: NCMS000, AQ0MS0, VMIP1S0B
+
+RG en_consciència en_consciència
+en: SPS00
+consciència: NCFS000
+
+RG en_conseqüència en_conseqüència
+en: SPS00
+conseqüència: NCFS000
+
+RG en_contacte en_contacte
+en: SPS00
+contacte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+
+RG en_contra en_contra
+en: SPS00
+contra: SPS00, NCCS000
+
+RG en_contrast en_contrast
+en: SPS00
+contrast: NCMS000, VMIP1S0B
+
+RG en_curs en_curs
+en: SPS00
+curs: NCMS000, VMIP1S0B
+
+RG en_curt en_curt
+en: SPS00
+curt: RG
+
+RG en_definitiva en_definitiva
+en: SPS00
+definitiva: AQ0FS0
+
+RG en_directe en_directe
+en: SPS00
+directe: RG
+
+RG en_dubte en_dubte
+en: SPS00
+dubte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+
+RG en_efecte en_efecte
+en: SPS00
+efecte: NCMS000
+
+RG en_efectiu en_efectiu
+en: SPS00
+efectiu: NCMS000, AQ0MS0
+
+RG en_especial en_especial
+en: SPS00
+especial: AQ0CS0
+
+RG en_fals en_fals
+en: SPS00
+fals: NCMS000, AQ0MS0, VMIP1S0B
+
+RG en_general en_general
+en: SPS00
+general: NCCS000, AQ0CS0
+
+RG en_línia_recta en_línia_recta
+en: SPS00
+línia: NCFS000
+recta: NCFS000, AQ0FS0
+
+RG en_massa en_massa
+en: SPS00
+massa: RG
+
+RG en_miniatura en_miniatura
+en: SPS00
+miniatura: VMM02S00, NCFS000, VMIP3S00
+
+RG en_nom_seu en_nom_seu
+en: SPS00
+nom: VMIP1S0Z, NCMS000, VMIP3S00, VMM02S00
+seu: NCFS000, AP3MS0C0, PX3MS0C0, VMM02S00, DP3MS0C0, VMIP3S00
+
+RG en_paral·lel en_paral·lel
+en: SPS00
+paral·lel: NCMS000, AQ0MS0
+
+RG en_part en_part
+en: SPS00
+part: NCMS000, AQ0MS0, NCFS000
+
+RG en_particular en_particular
+en: SPS00
+particular: NCCS000, AQ0CS0
+
+RG en_peu_de_guerra en_peu_de_guerra
+en: SPS00
+peu: NCMS000
+de: SPS00
+guerra: NCFS000
+
+RG en_picat en_picat
+en: SPS00
+picat: VMP00SM0, NCMS000, AQ0MS0
+
+RG en_positiu en_positiu
+en: SPS00
+positiu: NCMS000, AQ0MS0
+
+RG en_principi en_principi
+en: SPS00
+principi: NCMS000
+
+RG en_privat en_privat
+en: SPS00
+privat: VMP00SM0, NCMS000, AQ0MS0
+
+RG en_públic en_públic
+en: SPS00
+públic: NCMS000, AQ0MS0
+
+RG en_realitat en_realitat
+en: SPS00
+realitat: NCFS000
+
+RG en_ridícul en_ridícul
+en: SPS00
+ridícul: NCMS000, AQ0MS0
+
+RG en_solitari en_solitari
+en: SPS00
+solitari: NCMS000, AQ0MS0
+
+RG en_suspens en_suspens
+en: SPS00
+suspens: VMIP2S00, NCMS000, AQ0MS0
+
+RG en_tot_cas en_tot_cas
+en: SPS00
+tot: RG
+cas: NCMS000, NCFP000, VMIP1S0B
+
+RG en_total en_total
+en: SPS00
+total: RG
+
+RG en_va en_va
+en: SPS00
+va: AQ0MS0, VMIP3S00, VAIP3S00
+
+RG en_vida en_vida
+en: SPS00
+vida: NCFS000
+
+RG en_vigílies en_vigílies
+en: SPS00
+vigílies: NCFP000
+
+RG en_viu en_viu
+en: SPS00
+viu: NCMS000, VMM02S00, VMIS1S00, AQ0MS0, VMIP3S00
+
+RG encara_que encara_que
+encara: RG
+que: RG
+
+RG fer_fora fer_fora
+fer: VMM02S0B, VMN00000, VMIP3S0B, AQ0MS0, VMIP1S0B
+fora: RG
+
+RG fins_a fins_a
+fins: RG
+a: SPS00
+
+RG fins_al fins_al
+fins: RG
+al: SP+DA
+
+RG fins_als fins_als
+fins: RG
+als: SP+DA
+
+RG fins_i_tot fins_i_tot
+fins: RG
+i: CC
+tot: RG
+
+RG hores_de_ara hores_d'_ara
+hores: NCFP000
+d': SPS00
+ara: RG
+
+RG in_situ in_situ
+in: 
+situ: 
+
+RG ipso_facto ipso_facto
+ipso: 
+facto: 
+
+RG juntament_amb juntament_amb
+juntament: RG
+amb: SPS00
+
+RG més_aviat més_aviat
+més: RG
+aviat: RG
+
+RG més_del_compte més_del_compte
+més: RG
+del: SP+DA
+compte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+
+RG més_o_menys més_o_menys
+més: RG
+o: CC, NCFS000
+menys: RG
+
+RG més_que més_que
+més: RG
+que: RG
+
+RG ni_de_bon_tros ni_de_bon_tros
+ni: CC, NCFS000
+de: SPS00
+bon: NCMS000, AQ0MS0
+tros: NCMS000, VMIP1S0B
+
+RG ni_molt_menys ni_molt_menys
+ni: CC, NCFS000
+molt: RG
+menys: RG
+
+RG ni_més_ni_menys ni_més_ni_menys
+ni: CC, NCFS000
+més: RG
+ni: CC, NCFS000
+menys: RG
+
+RG ni_tan_sols ni_tan_sols
+ni: CC, NCFS000
+tan: RG
+sols: RG
+
+RG no_només no_només
+no: RN
+només: RG
+
+RG no_obstant no_obstant
+no: RN
+obstant: VMG00000
+
+RG no_obstant_això no_obstant_això
+no: RN
+obstant: VMG00000
+això: PD0NS000
+
+RG no_solament no_solament
+no: RN
+solament: RG
+
+RG no_tan_sols no_tan_sols
+no: RN
+tan: RG
+sols: RG
+
+RG pel_cap_baix pel_cap_baix
+pel: SP+DA, VMIP1S0B
+cap: SPS00, NCCS000, PI0CS000, VMIP1S0Z, DI0CS0, VMM02S00, VMIP3S00, VMIP1S0B
+baix: RG
+
+RG per_acabar per_acabar
+per: SPS00
+acabar: VMN00000
+
+RG per_ara per_ara
+per: SPS00
+ara: RG
+
+RG per_complet per_complet
+per: SPS00
+complet: AQ0MS0, VMIP1S0B
+
+RG per_contra per_contra
+per: SPS00
+contra: SPS00, NCCS000
+
+RG per_damunt per_damunt
+per: SPS00
+damunt: RG
+
+RG per_descomptat per_descomptat
+per: SPS00
+descomptat: VMP00SM0
+
+RG per_exemple per_exemple
+per: SPS00
+exemple: NCMS000
+
+RG per_favor per_favor
+per: SPS00
+favor: NCMS000
+
+RG per_fi per_fi
+per: SPS00
+fi: NCCS000, AQ0MS0, NCFS000
+
+RG per_separat per_separat
+per: SPS00
+separat: VMP00SM0, AQ0MS0
+
+RG per_sobre per_sobre
+per: SPS00
+sobre: RG
+
+RG per_sota per_sota
+per: SPS00
+sota: RG
+
+RG per_tant per_tant
+per: SPS00
+tant: RG
+
+RG per_últim per_últim
+per: SPS00
+últim: AO0MS0
+
+RG poc_menys_que poc_menys_que
+poc: RG
+menys: RG
+que: RG
+
+RG posats_a_dir posats_a_dir
+posats: VMP00PM0, NCMP000
+a: SPS00
+dir: NCMS000, VMN00000
+
+RG primer_de_tot primer_de_tot
+primer: RG
+de: SPS00
+tot: RG
+
+RG prop_de prop_d'
+prop: RG
+d': SPS00
+
+RG prop_de prop_de
+prop: RG
+de: SPS00
+
+RG prop_del prop_del
+prop: RG
+del: SP+DA
+
+RG sempre_que sempre_que
+sempre: RG
+que: RG
+
+RG sens_dubte sens_dubte
+sens: SPS00
+dubte: NCMS000, VMIP1S0V, VMM03S0V, VMSP3S0V, VMSP1S0V
+
+RG si_de_cas si_de_cas
+si: CS, NCMS000
+de: SPS00
+cas: NCMS000, NCFP000, VMIP1S0B
+
+RG si_més_no si_més_no
+si: CS, NCMS000
+més: RG
+no: RN
+
+RG si_us_plau si_us_plau
+si: CS, NCMS000
+us: P020P000, NCFP000, PP2CP000
+plau: VMIP3S00, VMM02S00
+
+RG sigui_com_sigui sigui_com_sigui
+sigui: VSSP1S0Y, VSSP3S0Y, VSM03S0Y
+com: RG
+sigui: VSSP1S0Y, VSSP3S0Y, VSM03S0Y
+
+RG sí_que sí_que
+sí: RG
+que: RG
+
+RG tan_sols tan_sols
+tan: RG
+sols: RG
+
+RG tant_de_bo tant_de_bo
+tant: RG
+de: SPS00
+bo: NCMS000, AQ0MS0, I
+
+RG tot_i tot_i
+tot: RG
+i: CC
+
+RG tot_i_així tot_i_així
+tot: RG
+i: CC
+així: RG
+
+RG tot_i_això tot_i_això
+tot: RG
+i: CC
+això: PD0NS000
+
+RG tot_i_amb_això tot_i_amb_això
+tot: RG
+i: CC
+amb: SPS00
+això: PD0NS000
+
+RG tot_just tot_just
+tot: RG
+just: RG
+
+RG tot_seguit tot_seguit
+tot: RG
+seguit: VMP00SM0, NCMS000, AQ0MS0
+
+RG un_cop un_cop
+un: DI0MS0, PI0MS000
+cop: NCMS000, VMIP1S0B
+
+RG una_mica una_mica
+una: DI0FS0, PI0FS000
+mica: RG
+
+RG una_vegada una_vegada
+una: DI0FS0, PI0FS000
+vegada: NCFS000
+
+RG vet_aquí vet_aquí
+vet: NCMS000, VMIP1S0B
+aquí: RG
+
+RG és_clar és_clar
+és: VSIP3S00
+clar: RG
+
+RN no_només no_només
+no: RN
+només: RG
+
