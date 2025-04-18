@@ -7,6 +7,7 @@ class Trainer:
     def load(self, filename):
         with open(filename, 'r', encoding='utf-8') as f:
             self.data = [pos.WordInfo(*line.split()) for line in f]
+        return self
 
     def train_pos_ngram(self, n:int, pos_limits:tuple[int,int]):
         prune = lambda wi: wi.pos[pos_limits[0]:pos_limits[0]]
@@ -14,6 +15,7 @@ class Trainer:
         ngram = distribution.NGram(n, '-', prune=prune)
         for pos_list in utils.splitList(self.data, sep_func=split, not_empty=True):
             ngram.feed(pos_list)
+        return ngram
 
 
     def train_pos_a_priori(self, pos_size):
@@ -32,11 +34,12 @@ class Trainer:
         for key in list(probs.keys()):
             if probs[key].total() <= 20:
                 del probs[key]
+        return probs
 
 
-# with open(f'model/{name}.{pos_size}pos.count.txt', 'w', encoding='utf-8') as f:
-#     probs.save(f)
-# with open(f'model/{name}.{pos_size}pos.{n}gram.txt', 'w') as f:
-#     ngram.save(f)
-
+if __name__ == '__main__':
+    trainer = Trainer().load(f'data/ancora-train.pos.txt')
+    trainer.train_pos_a_priori(pos_size=2).save()
+    trainer.train_pos_ngram(n=3, pos_size=2)
+    trainer.train_pos_ngram(n=2, pos_size=1) #...
 

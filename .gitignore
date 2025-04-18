@@ -1,7 +1,8 @@
 **/tmp/
 __pycache__/
 corpus-tools/
-data-raw/
+data-raw/*/
 *.url
 *.tmp
 kk.*
+pausa.py

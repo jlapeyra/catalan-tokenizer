@@ -10,8 +10,8 @@ MESOS_ANY_ABREVIATURA = ['gen', 'feb', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago',
 
 RE_MESOS = '|'.join(MESOS_ANY)
 RE_SETMANA = '|'
-RE_AC = 'aC|a_de_C|abans_de_Crist'
-RE_DC = 'dC|d_de_C|després_de_Crist'
+RE_AC = 'aC|a_._de_C|abans_de_Crist'
+RE_DC = 'dC|d_._de_C|després_de_Crist'
 
 
 NUMEROS = {}
@@ -22,7 +22,7 @@ with open('diccionari/numeros.txt') as f:
 
 
 def re_numeros(min_, max_):
-    return '|'.join(word for word,num in NUMEROS.items() if 1<=num<=31)
+    return '|'.join(word for word,num in NUMEROS.items() if min_<=num<=max_)
 
 numeros_mes = re_numeros(1, 31)
 numeros_any = re_numeros(0, 99)
@@ -97,10 +97,10 @@ def parse_date(words):
                 weekday or
                 day and pre_day in ('dia', 'el_dia') or
                 month and month in MESOS_ANY or
-                year and (
+                year and year.isnumeric() and (
                     pre_year in ('any', 'el_any') or
-                    pre_year=='el' and year and year.isnumeric() and 1000<int(year)<2200 or
-                    year.isnumeric() and 1900<int(year)<2100
+                    pre_year=='el' and 1400<int(year)<2200 or
+                    1900<=int(year)<=2100
                 )
             )
         ):

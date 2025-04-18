@@ -1,5 +1,4 @@
 from io import TextIOWrapper
-from warnings import deprecated
 from diccionari import getDiccionari, getLocucions, Pos, WordInfo, Entry
 import utils as utils
 import re
@@ -16,10 +15,13 @@ aux_raw_dict = [x.word for x in RAW_DICCIONARI if "'" in x.word or '-' in x.word
 CONTRACCIONS_INICIALS = '|'.join({w for w in aux_raw_dict if w[-1] in ('-', "'") and w.islower()})
 CONTRACCIONS_FINALS   = '|'.join({w for w in aux_raw_dict if w[0] in ('-', "'") and w.islower()})
 
-DICCIONARI : dict[str, WordInfo] = utils.group(RAW_DICCIONARI+RAW_LOCUCIONS, lambda info: info.word)
-LOCUCIONS : dict[str, WordInfo] = utils.group([
-    tuple(wi.word.split('_')) for wi in RAW_LOCUCIONS], 
-    len,
+DICCIONARI : dict[str, list[WordInfo]] = utils.group(
+    RAW_DICCIONARI+RAW_LOCUCIONS, 
+    lambda info: info.word
+)
+LOCUCIONS : dict[int, set[tuple]] = utils.group(
+    [tuple(wi.word.split('_')) for wi in RAW_LOCUCIONS], 
+    group_by=len,
     container=set
 )
 
@@ -75,9 +77,10 @@ def dictionaryEntries(word:str, start:bool=False):
     elif word == '\n':
         return {Entry('\n', '\n', '$')}
     
-    entries = set(DICCIONARI[word])
-    if start or word.isupper(): 
-        entries.union(DICCIONARI[word.lower()])
+    if start:
+        entries = set(DICCIONARI[word.lower()])
+    else:
+        entries = set(DICCIONARI[word]) | set(DICCIONARI[word.lower()])
 
     #if word.lower() in DIES_SETMANA or word.lower() in MESOS_ANY or word in SEGLES:
     #              categories.add('W')

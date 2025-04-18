@@ -9,7 +9,7 @@ from collections import defaultdict
 from typing import Iterable
 from pos import DICCIONARI, splitWords
 from copy import copy
-from others.numeros_i_dates import parse_date
+from misc.numeros_i_dates import parse_date
 
 def allPos(data:list[pos.WordInfo]=[]):
     pos_dicc = set(wi.pos for wi in pos.RAW_DICCIONARI)
@@ -64,6 +64,29 @@ class PosModel:
                     count_ + 0.8*self.getCountArrayPos(self.getPosAllCase(word))
             )
 
+    def predict(self, text):
+        tokens = self.tokenize(text)
+        pos_list = self.predictPos(tokens)
+        token_entries = []
+        for (token, entries), pos_ in zip(tokens, pos_list):
+            feasible_entries = [entry for entry in entries if entry.pos[:self.pos_len] == pos_]
+            if len(feasible_entries) > 1:
+                print(f'WARNING: Multiple feasible entries {token} {pos_} {feasible_entries}')
+            if feasible_entries:
+                entry = feasible_entries[0]
+            else:
+                entry = pos.WordInfo(token, token, pos_)
+            token_entries.append(entry)
+        return self.__join_proper_nouns(entries)
+
+
+
+
+
+
+
+
+
     def getBoolArrayPos(self, pos_list:Iterable[str]):
         token_entries = np.zeros(self.num_pos, dtype=bool)
         for pos_ in pos_list:
@@ -109,10 +132,11 @@ class PosModel:
         while i < len(words):
             date = None
             token_size = 1
-            for size in sorted(pos.LOCUCIONS, reverse=True):
+            for size in sorted(pos.LOCUCIONS.keys(), reverse=True):
                 if i+size > len(words):
                     continue
-                if tuple(words[i:i+size]) in pos.LOCUCIONS[size]:
+                if tuple(words[i:i+size]) in pos.LOCUCIONS[size] \
+                    or (words[i].lower(), *words[i+1:i+size]) in pos.LOCUCIONS[size]:
                     token_size = size
                     break
             date, size = parse_date(words[i:])
@@ -129,21 +153,6 @@ class PosModel:
 
             start_sentence = token in ('.', '\n')
         return tokens
-
-    def predict(self, text):
-        tokens = self.tokenize(text)
-        pos_list = self.predictPos(tokens)
-        token_entries = []
-        for (token, entries), pos_ in zip(tokens, pos_list):
-            feasible_entries = [entry for entry in entries if entry.pos[:self.pos_len] == pos_]
-            if len(feasible_entries) > 1:
-                print(f'WARNING: Multiple feasible entries {token} {pos_} {feasible_entries}')
-            if feasible_entries:
-                entry = feasible_entries[0]
-            else:
-                entry = pos.WordInfo(token, token, pos_)
-            token_entries.append(entry)
-        return self.__join_proper_nouns(entries)
 
     def __join_proper_nouns(self, entries):
         result = []
@@ -172,14 +181,7 @@ class PosModel:
         return result
 
 
-    def randomPick(self, probs:np.ndarray):
-        assert np.isclose(np.sum(probs), 1)
-        probs = np.cumsum(probs)
-        r = np.random.rand()
-        for i in range(len(probs)):
-            if probs[i] >= r:
-                return i
-        return len(probs)-1
+
     
 
     def predictPos(self, tokens:list[tuple[str,list[pos.Entry]]]):
@@ -230,8 +232,14 @@ class PosModel:
 
 
 if __name__ == '__main__':
-    for pos_size in (1, 2):
-        train(name='ancora', data_file='corpus/ancora-train.pos.txt', format='line', n_list=(1,2,3), pos_size=1)
-    # M = PosModel(name='ancora', pos_len=2)
-    # p = M.predict("hi havia una vegada...")
-    # p
+    model = PosModel('ancora', pos_len=2)
+    with open('data/minitrain/wiki.txt', encoding='utf-8') as in_:
+        with open('data/minitrain/wiki.pos.txt', 'w', encoding='utf-8') as out:
+            for line in in_.readlines():
+                tokens = model.tokenize(line)
+                pos_vecs = model.predictPos(tokens)
+                for (t, options), p in zip(tokens, pos_vecs):
+                    options = set(wi.pos[:2] for wi in options)
+                    print(p, t, '\t', ','.join(options) if len(set(options)) > 1 else '', file=out)
+                print(file=out)
+                out.flush()

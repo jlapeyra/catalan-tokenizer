@@ -1,10 +1,10 @@
 from collections import Counter, defaultdict
 from io import TextIOWrapper
 import math
-from typing import Sequence
+from typing import Sequence, TypeVar, Callable
 import numpy as np
 from utils import id, windowed, key_list
-from itertools import chain
+from itertools import chain, combinations
 from abc import ABC, abstractmethod
 
 
@@ -29,32 +29,7 @@ class Distribution(Counter):
         return Distribution({key: self.logProbability(key, alpha, num_keys) for key in self.keys()})
 
 
-class DoubleKeyDict:
-    @abstractmethod
-    def get(self, k1, k2):
-        pass
-
-    @abstractmethod
-    def priorKeys(self) -> set:
-        pass
-
-    @abstractmethod
-    def posteriorKeys(self) -> set:
-        pass
-
-    def matrix(self) -> np.ndarray:
-        priors = sorted(self.priorKeys())
-        posteriors = sorted(self.posteriorKeys())
-        matrix = np.zeros((len(priors), len(posteriors)))
-        for i, p in enumerate(priors):
-            for j, q in enumerate(posteriors):
-                matrix[i, j] = self.get(p, q)
-        return matrix, priors, posteriors
-
-
-class ConditionalDistribution(defaultdict[object, Distribution], DoubleKeyDict):
-    # counter allows __add__
-
+class ConditionalDistribution(defaultdict[object, Distribution]):
     def __init__(self) -> None:
         super().__init__(Distribution)
 
@@ -81,39 +56,32 @@ class ConditionalDistribution(defaultdict[object, Distribution], DoubleKeyDict):
                 self[key1][key2] = count
         return self
     
-    def priorKeys(self):
-        return set(self.keys())
-    
-    def posteriorKeys(self):
-        return set().union(*(dist.keys() for dist in self.values()))
-    
-pass
 
-    
-class NGram(Counter, DoubleKeyDict):
+class NGram(ConditionalDistribution):
     # Counter allows __add__
 
-    def __init__(self, n:int, default=None, prune_prior=id, prune_posterior=id, prune=None) -> None:
+    def __init__(self, n:int, default=None, func_prior:Callable=id, func_posterior:Callable=id, func:Callable=None):
         self.n = n
         self.default = default
-        if prune is not None:
-            self.prune_posterior = prune
-            self.prune_prior = prune
+        if func is not None:
+            self.func_posterior = func
+            self.func_prior = func
         else:
-            self.prune_prior = prune_prior
-            self.prune_posterior = prune_posterior
+            self.func_prior = func_prior
+            self.func_posterior = func_posterior
         super().__init__()
 
     def __sliding_window(self, sequence:Sequence):
         head, tail = [self.default]*(self.n-1), [self.default]
-        prior     = map(self.prune_prior, sequence)
-        posterior = map(self.prune_posterior, sequence)
+        prior     = map(self.func_prior, sequence)
+        posterior = map(self.func_posterior, sequence)
         prior     = chain(head, prior)
         posterior = chain(posterior, tail)
         return zip(windowed(prior, self.n-1), posterior)
 
     def feed(self, sequence:Sequence):
-        super().update(self.__sliding_window(sequence))
+        for k1, k2 in self.__sliding_window(sequence):
+            self[k1][k2]
         return self
     
     def save(self, filename):
@@ -134,33 +102,55 @@ class NGram(Counter, DoubleKeyDict):
                 except:
                     raise Exception(f'Wrong format: expected {self.n} keys and a number. Got: "{line}"')
                 else:
-                    prior     = tuple(map(self.prune_prior, prior))
-                    posterior = self.prune_posterior(posterior)
+                    prior     = tuple(map(self.func_prior, prior))
+                    posterior = self.func_posterior(posterior)
                     self[prior, posterior] += count
         return self
     
-    def priorKeys(self):
-        return {p for p,_ in self.keys()}
-    def posteriorKeys(self):
-        return {p for _,p in self.keys()}
+
     
 
+class CoOccurrences(ConditionalDistribution):
+    '''
+    Co-occurrences of pairs of elements in windows of size n
+    '''
+    def __init__(self, n:int, func:Callable=id) -> None:
+        assert n >= 2
+        self.n = n
+        self.func = func
+        super().__init__()
 
-
-
-
-
-
-
-class CrossEntropy:
-    log_prob = 0
-    num_elems = 0
-
-    def feed(self, log_probability, num_elements = 1):
-        self.log_prob += log_probability
-        self.num_elems += num_elements
-
-    def get(self):
-        return -1/self.num_elems * self.log_prob
+    def __sliding_window(self, sequence:Sequence, n):
+        return windowed(map(self.func, sequence), n)
     
+    def feed(self, sequence:Sequence):
+        for elems in self.__sliding_window(sequence, self.n):
+            for x, y in combinations(elems, 2):
+                self[x][y] += 1
+                self[y][x] += 1
+        return self
+
+    def save(self, filename):
+        saved_keys = set()
+        with open(filename, 'w', encoding='utf-8') as f:
+            for (key1, key2), count in sorted(self.items()):
+                if (key2, key1) not in saved_keys:
+                    print(key1, key2, count, file=f)
+                    saved_keys.add((key1, key2))
+
+    def load(self, filename):
+        with open(filename, 'r', encoding='utf-8') as f:
+            for line in f:
+                try:
+                    key1, key2, count = line.strip('\n').split()
+                    count = int(count)
+                except:
+                    raise Exception(f'Wrong format: expected `key1 key2 num`. Got: "{line}"')
+                else:
+                    self[key1, key2] += count
+        return self
+    
+
+if __name__ == "__main__":
+    print(CoOccurrences(3).feed('abc'))
 

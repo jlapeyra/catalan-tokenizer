@@ -1,0 +1,10 @@
+class CrossEntropy:
+    log_prob = 0
+    num_elems = 0
+
+    def feed(self, log_probability, num_elements = 1):
+        self.log_prob += log_probability
+        self.num_elems += num_elements
+
+    def get(self):
+        return -1/self.num_elems * self.log_prob

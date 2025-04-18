@@ -34,7 +34,7 @@ for t in tokens:
 pos_len=2
 model = PosModel('ancora', pos_len=pos_len, pos_list=allPos(tokens))
 #words = pos.splitWords(test_data)
-pos_vecs = model.predictPosProbDistribution([t.word for t in word_tokens])
+pos_vecs = model.predictPos([t.word for t in word_tokens])
 
 idx2pos = model.idx2pos #[p for p in model.idx2pos if p[0] not in ('$', '-', 'W', 'F', 'Z')]
 pos2idx = {p:i for i,p in enumerate(idx2pos)}
