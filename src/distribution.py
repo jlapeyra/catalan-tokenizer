@@ -81,7 +81,7 @@ class NGram(ConditionalDistribution):
 
     def feed(self, sequence:Sequence):
         for k1, k2 in self.__sliding_window(sequence):
-            self[k1][k2]
+            self[k1][k2] += 1
         return self
     
     def save(self, filename):
