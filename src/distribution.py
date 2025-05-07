@@ -104,7 +104,7 @@ class NGram(ConditionalDistribution):
                 else:
                     prior     = tuple(map(self.func_prior, prior))
                     posterior = self.func_posterior(posterior)
-                    self[prior, posterior] += count
+                    self[prior][posterior] += count
         return self
     
 
