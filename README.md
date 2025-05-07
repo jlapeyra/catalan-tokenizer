@@ -1,7 +1,7 @@
 # CatGPT
 L'objectiu d'aquest projecte és desenvolupar un model de llenguatge pel català.
 
-Naturalment, no pretén superar grans models com ChatGPT o Gamini, però la implementació es basarà en els mateixos principis, tot i que simplificats i amb datasets més petits.
+Naturalment, no pretén superar grans models com ChatGPT o Gemini, però la implementació es basarà en els mateixos principis, tot i que simplificats i amb datasets més petits.
 
 ## Fases
 - ✅ POS prediction using n-grams
