@@ -147,7 +147,8 @@ class CoOccurrences(ConditionalDistribution):
                 except:
                     raise Exception(f'Wrong format: expected `key1 key2 num`. Got: "{line}"')
                 else:
-                    self[key1, key2] += count
+                    self[key1][key2] += count
+                    self[key2][key1] += count
         return self
     
 
