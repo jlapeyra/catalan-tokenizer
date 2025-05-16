@@ -1,6 +1,6 @@
 # CatGPT
 
-***This project is for learning porpuses.***
+***--- This project is for learning porpuses. ---***
 
 The objective is to develop a language model for Catalan.
 
