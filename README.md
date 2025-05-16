@@ -1,5 +1,8 @@
 # CatGPT
-**This project is for learning porpuses**. The objective is to develop a language model for Catalan.
+
+***This project is for learning porpuses.***
+
+The objective is to develop a language model for Catalan.
 
 ## Phases
 - Tokenizer:
