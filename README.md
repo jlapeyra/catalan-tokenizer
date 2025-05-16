@@ -8,7 +8,7 @@
   - 🔜 Use of an existing tokenizer
 - Generative model:
   - 🔜 Generation using n-grams and co-occurrences
-  - 🔜🤞 Generation using a Pre-trained Transformer (GPT)
+  - 🔜(?) Generation using a Pre-trained Transformer (GPT)
   
 ## Resources
 - Diccionari: SOFTCATALÀ - https://github.com/Softcatala/catalan-dict-tools.
