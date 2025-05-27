@@ -11,9 +11,9 @@ The objective is to develop a language model for Catalan.
   - 🔜 Use of an existing tokenizer
 - Generative model:
   - 🔜 Generation using n-grams and co-occurrences
-  - 🔜(?) Generation using a Pre-trained Transformer (GPT)
+  - 🔜 Generation using a Pre-trained Transformer (GPT)
   
 ## Resources
-- Diccionari: SOFTCATALÀ - https://github.com/Softcatala/catalan-dict-tools.
-- Corpus anotat: ANCORA - http://clic.ub.edu/corpus
-- Corpus no anotat: VIQUIPÈDIA - https://ca.wikipedia.org
+- Dictionary: SOFTCATALÀ - https://github.com/Softcatala/catalan-dict-tools.
+- Annotated corpus: ANCORA - http://clic.ub.edu/corpus
+- Unnanotated corpus: VIQUIPÈDIA - https://ca.wikipedia.org
