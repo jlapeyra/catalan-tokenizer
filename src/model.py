@@ -52,7 +52,7 @@ class PosModel:
         with open(f'model/{name}.{pos_len}pos.count.txt', encoding='utf-8') as f:
             for line in f:
                 word, pos_, num = line.split()
-                if k1 not in self.pos2idx or k2 not in self.pos2idx:
+                if pos_ not in self.pos2idx:
                     continue
                 k = self.pos2idx[pos_]
                 num = int(num)
@@ -78,13 +78,6 @@ class PosModel:
                 entry = pos.WordInfo(token, token, pos_)
             token_entries.append(entry)
         return self.__join_proper_nouns(entries)
-
-
-
-
-
-
-
 
 
     def getBoolArrayPos(self, pos_list:Iterable[str]):
@@ -154,7 +147,7 @@ class PosModel:
             start_sentence = token in ('.', '\n')
         return tokens
 
-    def __join_proper_nouns(self, entries):
+    def __join_proper_nouns(self, entries:list[pos.WordInfo]) -> list[pos.WordInfo]:
         result = []
         i = 0
         while i < len(entries):
@@ -182,6 +175,7 @@ class PosModel:
 
 
 
+
     
 
     def predictPos(self, tokens:list[tuple[str,list[pos.Entry]]]):
@@ -203,10 +197,9 @@ class PosModel:
         picks = [None]*len(pos_vecs)
         for i in range(len(pos_vecs)):
             pos_vecs[i] = probability.combination(pos_vecs[i], (self.prob_cond_fwd @ prev_pos_vec))
-            j = self.randomPick(pos_vecs[i])
+            j = np.random.choice(self.num_pos, p=pos_vecs[i])
             picks[i] = j
-            pos_vecs[i] = np.zeros(self.num_pos, dtype=np.float64)
-            pos_vecs[i][j] = 1.0
+            pos_vecs[i] = probability.oneHot(self.num_pos, j)
             prev_pos_vec = pos_vecs[i]
         #print()
 
@@ -231,15 +224,3 @@ class PosModel:
 
 
 
-if __name__ == '__main__':
-    model = PosModel('ancora', pos_len=2)
-    with open('data/minitrain/wiki.txt', encoding='utf-8') as in_:
-        with open('data/minitrain/wiki.pos.txt', 'w', encoding='utf-8') as out:
-            for line in in_.readlines():
-                tokens = model.tokenize(line)
-                pos_vecs = model.predictPos(tokens)
-                for (t, options), p in zip(tokens, pos_vecs):
-                    options = set(wi.pos[:2] for wi in options)
-                    print(p, t, '\t', ','.join(options) if len(set(options)) > 1 else '', file=out)
-                print(file=out)
-                out.flush()
