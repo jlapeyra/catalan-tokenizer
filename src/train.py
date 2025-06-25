@@ -9,7 +9,7 @@ class Trainer:
             self.data = [pos.WordInfo(*line.split()) for line in f]
         return self
 
-    def train_pos_ngram(self, n:int, pos_limits:tuple[int,int]):
+    def train_pos_ngram(self, n:int, pos_limits:tuple[int,int]) -> distribution.NGram:
         prune = lambda wi: wi.pos[pos_limits[0]:pos_limits[0]]
         split = lambda wi: wi.pos in ('Fp', '$')
         ngram = distribution.NGram(n, '-', prune=prune)
@@ -18,7 +18,7 @@ class Trainer:
         return ngram
 
 
-    def train_pos_a_priori(self, pos_size):
+    def train_pos_a_priori(self, pos_size) -> distribution.ConditionalDistribution:
         # probability of POS given word
         probs = distribution.ConditionalDistribution()
         inici_frase = True
@@ -40,6 +40,6 @@ class Trainer:
 if __name__ == '__main__':
     trainer = Trainer().load(f'data/ancora-train.pos.txt')
     trainer.train_pos_a_priori(pos_size=2).save()
-    trainer.train_pos_ngram(n=3, pos_size=2)
+    trainer.train_pos_ngram(n=3, pos_size=2).save()
     trainer.train_pos_ngram(n=2, pos_size=1) #...
 

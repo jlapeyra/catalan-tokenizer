@@ -61,7 +61,7 @@ class PosModel:
         self.prob_by_type = dict()
         for word, count_ in count_by_type.items():
             self.prob_by_type[word] = probability.distribution(
-                    count_ + 0.8*self.getCountArrayPos(self.getPosAllCase(word))
+                    count_ + 0.8*self.getCountArrayPos(self.getPosAllCase(word, self.pos_len))
             )
 
     def predict(self, text):
@@ -92,9 +92,9 @@ class PosModel:
             token_entries[self.pos2idx[pos_[:self.pos_len]]] += 1
         return token_entries
     
-    def getPosAllCase(self, word:str):
+    def getPosAllCase(self, word:str, pos_len:int) -> set[str]:
         return {
-            info.pos[0] for info in 
+            info.pos[:pos_len] for info in 
             DICCIONARI[word] + DICCIONARI[word.upper()] + DICCIONARI[word.capitalize()]
         }
 
@@ -178,7 +178,7 @@ class PosModel:
 
     
 
-    def predictPos(self, tokens:list[tuple[str,list[pos.Entry]]]):
+    def predictPos(self, tokens:list[tuple[str,list[pos.Entry]]]) -> list[str]:
         pos_vecs = []
         ini_frase = True
         for token in tokens:

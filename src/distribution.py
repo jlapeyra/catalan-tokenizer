@@ -41,11 +41,12 @@ class ConditionalDistribution(defaultdict[object, Distribution]):
             for key in other.keys():
                 self[key] += other[key]
 
-    def save(self, file:TextIOWrapper):
-        for keys, count in sorted(self.items()):
-            print(*keys, count, file=file)
+    def save(self, filename:TextIOWrapper|str):
+        with open(filename, 'w', encoding='utf-8') as file:
+            for keys, count in sorted(self.items()):
+                print(*keys, count, file=file)
                 
-    def load(self, file:TextIOWrapper):
+    def load(self, file:TextIOWrapper|str):
         for line in file.readlines():
             try:
                 key1, key2, count = line.strip('\n').split()
